@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DishaAI Website</title>
-  <link rel="stylesheet" href="Events.css">
+  <link rel="stylesheet" href="reach us.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -27,12 +27,46 @@
         </nav>
       </header>
 
-  <!-- Hero Section -->
-  <main>
-    <div class="hero_div">
-        <img src="./Assets/Events image.png" alt="Robot Left" class="hero__image">
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="contact-container">
+      <!-- Left Side -->
+      <div class="left-section">
+        <h1>We’d Love to Hear<br>from You</h1>
+        <div class="illustration">
+          <img src="./Assets/contact us.png" alt="Customer Support Illustration">
+        </div>
       </div>
-  </main>
+      <!-- Right Side -->
+      <div class="right-section">
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name*</label>
+              <input type="text" id="first-name" name="first-name" placeholder="Enter First Name" required>
+              <small class="error-message"></small>
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name*</label>
+              <input type="text" id="last-name" name="last-name" placeholder="Enter Last Name" required>
+              <small class="error-message"></small>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail*</label>
+            <input type="email" id="email" name="email" placeholder="Enter Email Address" required>
+            <small class="error-message"></small>
+          </div>
+          <div class="form-group">
+            <label for="message">Write Message</label>
+            <textarea id="message" name="message" placeholder="Enter Your Message" required></textarea>
+            <small class="error-message"></small>
+          </div>
+          <button type="submit" class="submit-button">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+  </section>
 
    <!-- Footer -->
    <footer class="footer">
