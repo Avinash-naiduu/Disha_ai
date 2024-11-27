@@ -484,6 +484,7 @@
   font-size: 14px;
   color: #8e92bc;
   text-align: right;
+  font-weight: 600;
 }
 
 .hidden {
@@ -534,7 +535,7 @@
 .footer__contact-section,
 .footer__links-section,
 .footer__social-section {
-  flex: 0.3;
+  flex: 0.33;
   padding-right : 20px
 }
 
@@ -544,6 +545,13 @@
   color: #fff;
 }
 
+.footer__title {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: 400;
+}
+
 .footer__address,
 .footer__contact,
 .footer__email {
@@ -551,6 +559,7 @@
   line-height: 1.6;
   margin-bottom: 10px;
   color: #8e92bc;
+  font-weight: 400;
 }
 
 .footer__email a {
