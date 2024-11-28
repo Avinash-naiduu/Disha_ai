@@ -188,9 +188,29 @@
 }
 
 /* Prime Minister's Vision Section */
+
+.video-container {
+  width: 1280px; /* Fixed width */
+  height: 100%; /* Fixed height */
+  background-color: #000; /* Black background for a classic video player look */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.video-player {
+  width: 1280px;
+  height: 100%;
+  object-fit: cover;
+}
+
 .vision-section {
   text-align: center;
   padding: 40px 80px;
+  justify-items: center;
 }
 
 .vision-section h3 {
@@ -204,16 +224,16 @@
   font-size: 35px;
 }
 
-.vision-video {
-  /* max-width: 800px; */
+/* .vision-video {
+  max-width: 800px;
   margin: 20px auto;
   width: 100%;
-}
+} */
 
-.vision-video img {
+/* .vision-video video {
   width: 100%;
   border-radius: 15px;
-}
+} */ */
 
 /* Our Offerings Section */
 .offerings-section {
