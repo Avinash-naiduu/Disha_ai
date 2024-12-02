@@ -14,72 +14,78 @@ color: #2F3032;
 
 /* Header Styling */
 header {
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 20px 50px;
-background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: white;
 }
 
 .logo img {
-height: 40px;
+  height: 40px;
 }
 
 nav ul {
-display: flex;
-list-style: none;
+  display: flex;
+  list-style: none;
 }
 
 nav ul li {
-margin: 0 15px;
+  margin: 0 15px;
 }
 
 nav ul li a {
-text-decoration: none;
-color: #2F3032;
-font-weight: 500;
-font-size: 18px;
+  text-decoration: none;
+  color: #2F3032; /* Default text color */
+  font-weight: 500;
+  font-size: 18px;
+  transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+/* Hover Effect for Text Links */
+nav ul li a:hover {
+  color: #FF7676; /* Change color on hover */
 }
 
 /* Active Link Styling */
 nav ul li a.active {
-color: #FF7676; /* Highlight color */
-font-weight: bold;
-position: relative;
-font-size: 20px;
+  color: #FF7676; /* Highlight color */
+  font-weight: bold;
+  position: relative;
+  font-size: 20px;
 }
 
 nav ul li a.active::after {
-content: "";
-position: absolute;
-width: 80%;
-height: 3px;
-background-color: #FF7676;
-font-size: 20px;
-bottom: -4px;
-left: 0;
-border-radius: 100px;
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 3px;
+  background-color: #FF7676;
+  bottom: -4px;
+  left: 0;
+  border-radius: 100px;
 }
 
 /* Login Button Styling */
 .login-btn {
-background-color: #FF7676;
-color: white;
-padding: 12px 38px;
-border-radius: 10px;
-font-weight: bold;
-border: none;
-cursor: pointer;
-transition: background-color 0.3s ease;
+  background-color: #FF7676;
+  color: white;
+  padding: 12px 38px;
+  border-radius: 10px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .login-btn:hover {
-background-color: #FF5A5A; /* Darker shade on hover */
+  background-color: #FF5A5A; /* Darker shade on hover */
 }
 
 .login-btn:active {
-background-color: #FF3B3B; /* Even darker shade when clicked */
+  background-color: #FF3B3B; /* Even darker shade when clicked */
 }
+
   
   /* Hero Section */
 
