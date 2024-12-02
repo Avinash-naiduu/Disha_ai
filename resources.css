@@ -38,13 +38,14 @@
     text-decoration: none;
     color: #2F3032;
     font-weight: 500;
+    font-size: 18px;
   }
   
   .login-btn {
     background-color: #FF7676;
     color: white;
-    padding: 8px 16px;
-    border-radius: 20px;
+    padding: 12px 38px;
+    border-radius: 10px;
     font-weight: bold;
   }
   
@@ -62,6 +63,178 @@
     justify-content: center;
   } */
   
+/* Main Content */
+.main-content {
+  display: flex;
+  padding: 40px;
+  gap: 20px;
+}
+
+.sidebar {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  width: 20%;
+  border: 3px solid #EEEEEE;
+}
+
+.sidebar-title {
+  border-bottom: 2px solid #F0F0F0;
+  font-size: 26px;
+  color: #8E92BC;
+  margin-bottom: 30px;
+  padding: 0px 0px 20px 0px;
+}
+
+.sidebar-list {
+  list-style: none;
+}
+
+.sidebar-list li {
+  margin-bottom: 10px;
+}
+
+.sidebar-list li a {
+  text-decoration: none;
+  color: #2f3032;
+  font-size: 20px;
+  line-height: 35px;
+  font-weight:500
+}
+
+.sidebar-list li.active a {
+  font-weight: bold;
+  color: #ff7676;
+}
+
+/* .blog-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 80%;
+}
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  padding: 1rem;
+}
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.card h3 {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  color: #2F3032;
+}
+.card p {
+  font-size: 0.9rem;
+  color: #666;
+}
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #FF7676;
+  font-weight: bold;
+} */
+
+/* Card Container */
+.section {
+  color: #000;
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  max-width: 350px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  overflow: hidden;
+  /* font-family: 'Space Grotesk', sans-serif; */
+  gap: 30px;
+}
+
+/* Card Image */
+.card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Card Content */
+.card-content {
+  padding: 16px;
+  position: relative;
+}
+
+/* Blog Tag */
+.tag {
+  display: inline-block;
+  background: #2f3032;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.3rem 0.8rem;
+  border-radius: 12px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+/* Blog Date */
+.date {
+  float: right;
+  font-size: 0.85rem;
+  color: #8e92bc;
+  font-weight: 500;
+}
+
+/* Blog Title */
+.card-content h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #2f3032;
+  margin: 0.5rem 0;
+}
+
+/* Blog Description */
+.card-content p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #8e92bc;
+  margin-bottom: 1rem;
+}
+
+/* Read More Button */
+.read-more-btn {
+  display: inline-block;
+  color: #ff7676;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid #ff7676;
+  padding: 8px 16px;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.read-more-btn span {
+  font-size: 1.1rem;
+  margin-left: 5px;
+}
+
+.read-more-btn:hover {
+  background: #ff7676;
+  color: #fff;
+}
+
+
   /* Footer Styling */
 .footer {
   background-color: #1e1e1e;
