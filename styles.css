@@ -36,20 +36,20 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #2F3032; /* Default text color */
+  color: #2F3032;
   font-weight: 500;
   font-size: 18px;
-  transition: color 0.3s ease; /* Smooth transition for color */
+  transition: color 0.3s ease; 
 }
 
 /* Hover Effect for Text Links */
 nav ul li a:hover {
-  color: #FF7676; /* Change color on hover */
+  color: #FF7676; 
 }
 
 /* Active Link Styling */
 nav ul li a.active {
-  color: #FF7676; /* Highlight color */
+  color: #FF7676; 
   font-weight: bold;
   position: relative;
   font-size: 20px;
@@ -79,66 +79,64 @@ nav ul li a.active::after {
 }
 
 .login-btn:hover {
-  background-color: #FF5A5A; /* Darker shade on hover */
+  background-color: #FF5A5A; 
 }
 
 .login-btn:active {
-  background-color: #FF3B3B; /* Even darker shade when clicked */
+  background-color: #FF3B3B;
 }
-
-
   
   /* Hero Section Styling */
-
-  /* div.scroll-container { */
-    /* background-color: #333; */
-    /* overflow: auto;
-    white-space: nowrap;
-    padding: 40px 80px 40px 80px; */
-  /* } */
-  
-  /* div.scroll-container img { */
-    /* padding: 10px; */
-    /* width: 100%;
-    max-height: 680px;
-    object-fit: cover;
-    border-radius: 60px;
-  } */
-  
-  .hero-section {
+   /* Hero Section Styling */
+   .hero-section {
     position: relative;
     background-color: #fff;
     text-align: center;
-    padding: 40px 80px 40px 80px;
-    /* display: flex;
-    gap: 50px; */
+    padding: 40px 0;
+    overflow: hidden;
+  }
+  
+  .hero-section .banner-slider {
+      display: flex;
+      flex-wrap: nowrap;
+      width: 90%;
+      height: 720px;
+      animation: slide 12s infinite;
+      gap:30px;
+      border-radius: 20px;
+      margin-left: 60px;
+      margin-right: 60px;
+  }
+  
+  .hero-section .slide {
+    flex: 0 0 100%;
+    /* max-height: 680px; */
+    transition: transform 0.5s ease-in-out;
   }
   
   .hero-section img {
     width: 100%;
+    height: auto;
     max-height: 680px;
     object-fit: cover;
-    border-radius: 60px;
-    margin-top: 80px;
+    border-radius: 40px;
+    margin-top: 60px;
   }
   
-  .hero-content {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #A54747;
-  }
-  
-  .hero-content h1 {
-    font-size: 2.5rem;
-    line-height: 1.2;
-  }
-  
-  .highlight {
-    color: #A54747;
-    font-weight: bold;
+  /* Keyframes for sliding effect */
+  @keyframes slide {
+    0%, 25% {
+      transform: translateX(0);
+    }
+    33%, 58% {
+      transform: translateX(-100%); 
+    }
+    66%, 91% {
+      transform: translateX(-200%);
+    }
+    100% {
+      transform: translateX(0);
+    }
   }
   
   /* Intro Section Styling */
@@ -180,12 +178,6 @@ nav ul li a.active::after {
     color: #FF7676;
   }
   
-  /* .intro-section p {
-    font-size: 20px;
-    color: #8E92BC;
-    max-width: 600px;
-    margin: 20px auto;
-  } */
   
   .illustration {
     /* margin-top: 30px; */
@@ -231,19 +223,16 @@ nav ul li a.active::after {
 /* Prime Minister's Vision Section */
 
 .video-container {
-  width: 1280px; /* Fixed width */
-  height: 100%; /* Fixed height */
-  background-color: #000; /* Black background for a classic video player look */
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
   overflow: hidden;
 }
 
 .video-player {
-  width: 1280px;
+  width: 1080px;
   height: 100%;
   object-fit: cover;
 }
@@ -264,17 +253,6 @@ nav ul li a.active::after {
   margin-bottom: 20px;
   font-size: 35px;
 }
-
-/* .vision-video {
-  max-width: 800px;
-  margin: 20px auto;
-  width: 100%;
-} */
-
-/* .vision-video video {
-  width: 100%;
-  border-radius: 15px;
-} */ */
 
 /* Our Offerings Section */
 .offerings-section {
@@ -413,6 +391,7 @@ nav ul li a.active::after {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  align-content: top;
 }
 
 .card h3 {
@@ -470,18 +449,17 @@ nav ul li a.active::after {
   margin-bottom: 50px;
   font-size: 35px;
 }
-
+ .content{
+  display: flex;
+ }
 .container {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
-  /* gap: 20px; */
   background-color: #1e1e1e;
   padding: 30px 80px;
   border-radius: 35px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  margin: 0px 80px
-
+  margin: 0px 80px;
 }
 
 .left-section {
@@ -508,20 +486,22 @@ nav ul li a.active::after {
   padding: 10px 15px 10px 12px;
   border-radius: 50%;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  align-content: center;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 .controls button:hover {
   background-color: #ff7676;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(255, 118, 118, 0.6);
 }
 
 .testimonials {
   display: flex;
   overflow: hidden;
-  /* width: 600px; */
-  position: relative;
   gap: 20px;
+  width: 100%;
+  margin-left: 100px;
+  position: relative;
 }
 
 .testimonial-card {
@@ -530,23 +510,8 @@ nav ul li a.active::after {
   background-color: #2f3032;
   border-radius: 16px;
   padding: 20px;
-  border-top-width: 2px;
-  border-right-width: 0;
-  border-bottom-width: 0;
-  border-left-width: 2px;
-  border-top-style: solid;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  border-left-style: solid;
-  /* border-top-color: initial;
-  border-right-color: initial;
-  border-bottom-color: initial;
-  border-left-color: initial; */
-  /* border-image-source: initial;
-  border-image-slice: initial;
-  border-image-width: initial;
-  border-image-outset: initial;
-  border-image-repeat: initial; */
+  border-width: 2px;
+  border-style: solid;
   color: #ffffff;
   transition: transform 0.5s ease-in-out;
 }
@@ -566,24 +531,14 @@ nav ul li a.active::after {
   font-weight: 600;
 }
 
-.hidden {
-  display: none;
-}
-
-.content {
-  display: flex;
-  gap: 200px;
-}
 
 
 /* Section Heading */
-/* Contact Section Styling */
 .contact-section {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 60px 20px;
-  /* background-color: #2F3032; */
 }
 
 .contact-container {

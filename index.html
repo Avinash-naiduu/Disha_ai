@@ -6,14 +6,13 @@
     <title>DISHA Platform</title>
     <link rel="stylesheet" href="styles.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
+    <script src="script.js"></script>
   </head>
 
   <body>
     <header style="position: fixed; top: 0%; z-index: 19999; width: 100%;">
       <div class="logo">
         <img src="./Assets/DishaAI_Logo.png" alt="DISHA Logo" />
-        <a href="index.html"></a>
         <!-- Replace with your logo image path -->
       </div>
       <nav>
@@ -30,8 +29,17 @@
     </header>
 
     <section class="hero-section">
-      <img src="./Assets/Are-you-Worried-about-YOUR-CHILD’S-FUTURE.png" alt="Children at Bookshelf"/>
-      <!-- <img src="./Assets/Do-you-know-your-child’s-interest-AND-strengths.png" alt="Children at Bookshelf"/> -->
+      <div class="banner-slider">
+        <div class="slide">
+          <img src="./Assets/how-do-you-identify-and-nurture-the-right-skill-set-for-your-child.png" alt="Banner 1">
+        </div>
+        <div class="slide">
+          <img src="./Assets/Do-you-know-your-child’s-interest-AND-strengths.png" alt="Banner 2">
+        </div>
+        <div class="slide">
+          <img src="./Assets/Are-you-Worried-about-YOUR-CHILD’S-FUTURE.png" alt="Banner 3">
+        </div>
+      </div>
     </section>
 
     <section class="intro-section">
@@ -48,9 +56,7 @@
 
         <div class="illustration" style="width: 50%">
           <img
-            src="./Assets/Empowering.png"
-            alt="Illustration of student using AI"
-          />
+            src="./Assets/Empowering.png" alt="Illustration of student using AI"/>
           <!-- Replace with your illustration image path -->
         </div>
       </div>
@@ -110,14 +116,8 @@
               width: 50%;
               display: flex;
               align-items: center;
-              justify-content: center;
-            "
-          >
-            <img
-              src="./Assets/Students.png"
-              alt="School Illustration"
-              width="583px"
-            />
+              justify-content: center;">
+            <img src="./Assets/Students.png"alt="School Illustration"width="583px"/>
           </div>
         </div>
       <!-- end -->
@@ -139,11 +139,7 @@
               justify-content: center;
             "
           >
-            <img
-              src="./Assets/Parents.png"
-              alt="School Illustration"
-              width="583px"
-            />
+            <img src="./Assets/Parents.png"alt="School Illustration"width="583px"/>
           </div>
         </div>
       <!-- end -->
@@ -156,20 +152,8 @@
               The National Education Policy (NEP) prioritizes enhancing teaching quality, positioning teachers as catalysts for transformative change. DISHAAI's Skill Assessment Program plays a pivotal role in this endeavour. By identifying areas where students require exploration beyond their curriculum and subjects needing additional support, our program empowers teachers to tailor instruction, nurture unique strengths, and address knowledge gaps. This targeted approach enables teachers to elevate student academic performance, ultimately enhancing their own professional growth and reputation within the school community.
             </p>
           </div>
-          <div
-            style="
-              background-color: #F8EBC8;
-              width: 50%;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-            "
-          >
-            <img
-              src="./Assets/Teachers.png"
-              alt="School Illustration"
-              width="583px"
-            />
+          <div style="background-color: #F8EBC8; width: 50%; display: flex; align-items: center; justify-content: center;">
+            <img src="./Assets/Teachers.png"alt="School Illustration"width="583px"/>
           </div>
         </div>
       <!-- end -->
@@ -185,20 +169,8 @@
               Program.
             </p>
           </div>
-          <div
-            style="
-              background-color: #fff0f0;
-              width: 50%;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-            "
-          >
-            <img
-              src="./Assets/Schools.png"
-              alt="School Illustration"
-              width="583px"
-            />
+          <div style="background-color: #fff0f0; width: 50%; display: flex; align-items: center; justify-content: center; ">
+            <img src="./Assets/Schools.png"alt="School Illustration"width="583px"/>
           </div>
         </div>
       <!-- end -->
@@ -214,13 +186,7 @@
             <img src="./Assets/Prahalad Karnam.png" alt="Prahalad Karnam" />
           </div>
           <h3>Prahalad Karnam</h3>
-          <p>Co-Founder & Director</p>
-          <div class="social-icons">
-            <i class="fa fa-instagram"></i>
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-youtube"></i>
-            <i class="fa fa-x"></i>
-          </div>
+          <p>CEO and Co Founder</p>
           <p class="description">
             21+ years of Global Experience Columbia Business School, Strategic
             Leadership - Harvard Business School Strategy & Operations Consulting
@@ -233,16 +199,10 @@
         <!-- Card 2 -->
         <div class="card">
           <div class="profile-pic">
-            <img src="./Assets/Syam Ivaturi.png" alt="Syam Ivaturi" />
+            <img src="./Assets/Syam Ivaturi.jpeg" alt="Syam Ivaturi" />
           </div>
           <h3>Syam Ivaturi</h3>
-          <p>Co-Founder & Director</p>
-          <div class="social-icons">
-            <i class="fa fa-instagram"></i>
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-youtube"></i>
-            <i class="fa fa-x"></i>
-          </div>
+          <p>CMO and Co Founder</p>
           <p class="description">
             21+ years of Global Experience Business Analytics Professional,
             Visiting Professor – REVA and other Universities Coach and Mentor to Indian & US
@@ -285,24 +245,30 @@
               </p>
               <span>- Student</span>
             </div>
+            <div class="testimonial-card" style="border-color: #28d995;">
+              <p>
+                This Is A Great Program, Extremely Accurate. The Assessments Given Me A Great
+                Insight To Align My Parents And Teachers In One Direction.
+              </p>
+              <span>- Dinesh</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    
 
    <!-- Contact Section -->
   <section class="reach-us">
     <h2>REACH US</h2>
   <div class="contact-section">
     <div class="contact-container">
-      <!-- Left Side -->
       <div class="left1-section">
         <h1>We’d Love to Hear<br>from You</h1>
         <div class="illustration1">
           <img src="./Assets/contact us.png" alt="Customer Support Illustration">
         </div>
       </div>
-      <!-- Right Side -->
       <div class="right-section">
         <form class="contact-form" id="contactForm">
           <div class="form-row">
@@ -333,13 +299,10 @@
     </div>
   </div>
   </section>
-  
 
-  
      <!-- Footer -->
   <footer class="footer">
     <div class="footer__container">
-      <!-- Logo Section -->
       <div class="footer__logo-section">
         <img src="./Assets/DishaAI_Logo.png" alt="DISHA AI Logo" class="footer__logo" />
         <div class="footer__social-section">
@@ -351,9 +314,7 @@
             <a href="#" class="footer__social-icon"><i class="fab fa-twitter"></i></a>
           </div>
         </div>
-        <!-- <p class="footer__tagline">Dreams I Should Achieve</p> -->
       </div>
-  
       <!-- Contact Section -->
       <div class="footer__contact-section">
         <h3 class="footer__heading">Get In Touch</h3>
@@ -380,6 +341,5 @@
       </div>
     </div>
   </footer>
-
   </body>
 </html>
