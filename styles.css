@@ -449,9 +449,7 @@ nav ul li a.active::after {
   margin-bottom: 50px;
   font-size: 35px;
 }
- .content{
-  display: flex;
- }
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -462,15 +460,18 @@ nav ul li a.active::after {
   margin: 0px 80px;
 }
 
+.content {
+  display: flex;
+}
+
 .left-section {
   max-width: 20%;
   text-align: left;
-  margin-bottom: 40px;
 }
 
 .left-section h3 {
   font-size: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   color: #fff;
 }
 
@@ -495,13 +496,17 @@ nav ul li a.active::after {
   box-shadow: 0 4px 8px rgba(255, 118, 118, 0.6);
 }
 
+.testimonials-wrapper {
+  overflow: hidden;
+  flex: 1;
+  position: relative;
+  margin-left: 60px;
+}
+
 .testimonials {
   display: flex;
-  overflow: hidden;
   gap: 20px;
-  width: 100%;
-  margin-left: 100px;
-  position: relative;
+  transition: transform 0.5s ease-in-out;
 }
 
 .testimonial-card {
@@ -513,7 +518,7 @@ nav ul li a.active::after {
   border-width: 2px;
   border-style: solid;
   color: #ffffff;
-  transition: transform 0.5s ease-in-out;
+  /* margin-bottom: 50px; */
 }
 
 .testimonial-card p {
@@ -529,9 +534,8 @@ nav ul li a.active::after {
   color: #8e92bc;
   text-align: right;
   font-weight: 600;
+  margin-top: 30px;
 }
-
-
 
 /* Section Heading */
 .contact-section {
@@ -655,9 +659,6 @@ textarea {
   }
 }
 
-
-
-
 /* Responsive Design */
 @media (max-width: 768px) {
   .contact-container {
@@ -668,8 +669,6 @@ textarea {
     flex-direction: column;
   }
 }
-
-
 
 /* Footer Styling */
 .footer {
@@ -692,7 +691,6 @@ textarea {
   min-width: 200px;
   text-align: left;
   margin-left: 40px;
-
 }
 
 .footer__logo {
