@@ -500,7 +500,7 @@ nav ul li a.active::after {
   overflow: hidden;
   flex: 1;
   position: relative;
-  margin-left: 60px;
+  margin-left: 100px;
 }
 
 .testimonials {
