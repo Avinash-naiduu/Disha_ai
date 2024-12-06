@@ -1530,94 +1530,101 @@ textarea {
   font-size: 35px;
 }
 
-/* Responsive Design for Tablets and Smaller Screens (max-width: 768px) */
-@media (max-width: 768px) {
+/* Responsive Design for Medium Screens (Tablets and below) */
+@media (max-width: 912px) {
   .footer__container {
+    gap: 20px;
     flex-direction: column;
-    gap: 30px;
-    padding: 20px;
-  }
-
-  .footer__logo-section {
-    text-align: center;
-    margin-left: 0;
+    align-items: center;
   }
 
   .footer__logo {
-    width: 50%;
-    margin-bottom: 20px;
+    width: 40%;
+    margin-bottom: 40px;
   }
 
   .footer__contact-section,
   .footer__links-section,
   .footer__social-section {
-    flex: 1;
-    min-width: auto;
-  }
-
-  .footer__heading {
-    font-size: 16px;
-  }
-
-  .footer__title {
-    font-size: 14px;
-  }
-
-  .footer__address,
-  .footer__contact,
-  .footer__email {
-    font-size: 12px;
+    flex: unset;
+    text-align: center;
+    padding: 10px 0;
   }
 
   .footer__social-icons {
     justify-content: center;
-    gap: 12px;
-  }
-
-  .footer__social-icon {
-    font-size: 18px;
   }
 
   .reach-us h2 {
-    font-size: 30px;
+    font-size: 28px;
+    padding: 8px 16px;
   }
 }
 
-/* Responsive Design for Mobile Screens (max-width: 480px) */
+/* Responsive Design for Tablets and Smaller Screens */
+@media (max-width: 768px) {
+  .footer__logo {
+    width: 50%;
+  }
+
+  .footer__heading {
+    font-size: 16px;
+  }
+
+  .footer__address,
+  .footer__contact,
+  .footer__email,
+  .footer__title {
+    font-size: 13px;
+  }
+
+  .reach-us h2 {
+    font-size: 24px;
+    padding: 6px 12px;
+  }
+}
+
+/* Responsive Design for Small Mobile Screens */
 @media (max-width: 480px) {
-  .footer__container {
-    padding: 20px;
+  .footer {
+    padding: 20px 10px;
   }
 
   .footer__logo {
     width: 60%;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+  }
+
+  .footer__container {
+    gap: 15px;
+    align-items: center;
+  }
+
+  .footer__contact-section,
+  .footer__links-section,
+  .footer__social-section {
+    text-align: center;
+    padding: 5px 0;
+  }
+
+  .footer__social-icons {
+    justify-content: center;
+    gap: 10px;
   }
 
   .footer__heading {
     font-size: 14px;
   }
 
+  .footer__address,
+  .footer__contact,
+  .footer__email,
   .footer__title {
     font-size: 12px;
   }
 
-  .footer__address,
-  .footer__contact,
-  .footer__email {
-    font-size: 12px;
-    line-height: 1.4;
-  }
-
-  .footer__social-icons {
-    gap: 10px;
-  }
-
-  .footer__social-icon {
-    font-size: 16px;
-  }
-
   .reach-us h2 {
-    font-size: 28px;
+    font-size: 20px;
+    padding: 5px 10px;
   }
 }
