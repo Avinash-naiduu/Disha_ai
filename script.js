@@ -41,3 +41,23 @@ document.addEventListener("DOMContentLoaded", () => {
   // Resize event to handle dynamic card widths (e.g., on window resize)
   window.addEventListener("resize", updateSlides);
 });
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector("nav ul");
+  
+    // Toggle the active class for menu visibility
+    hamburger.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+  
+    // Close menu when clicking outside
+    document.addEventListener("click", (event) => {
+      if (!hamburger.contains(event.target) && !navMenu.contains(event.target)) {
+        navMenu.classList.remove("active");
+      }
+    });
+  });
+  
