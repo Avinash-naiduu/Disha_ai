@@ -264,6 +264,7 @@ nav ul li a.active::after {
 
   .hero-section img {
       max-height: 280px;
+      border-radius: 20px;
   }
 }
 
@@ -433,6 +434,7 @@ body {
     align-items: center;
     padding: 20px;
     gap: 20px;
+    border-radius: 16px;
   }
 
   .stat-item {
@@ -520,7 +522,9 @@ body {
   }
 
   .vision-section h3 {
-    font-size: 22px;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 10px;
   }
 
   .video-player {
@@ -606,7 +610,9 @@ body {
   }
 
   .offerings-section h3 {
-    font-size: 24px; /* Further reduce heading font size */
+    font-size: 16px; /* Further reduce heading font size */
+    padding: 8px 16px;
+    border-radius:10px;
   }
 }
 
@@ -730,8 +736,9 @@ body {
   }
 
   .benfits-section h3 {
-    font-size: 16px; /* Make heading smaller */
-  }
+    font-size: 16px; /* Further reduce heading font size */
+    padding: 8px 16px;
+    border-radius:10px;  }
 
   .benfits-section h4 {
     font-size: 28px; /* Smaller subheading font */
@@ -771,6 +778,7 @@ body {
   font-size: 35px;
 }
 
+/* Team Section */
 .team {
   display: flex;
   justify-content: center;
@@ -845,95 +853,109 @@ body {
   text-align: justify;
 }
 
-/* Responsive Design for Medium Screens (Tablets and below) */
+/* Responsive Design for 912px (Tablets) */
 @media (max-width: 912px) {
+  .about-us h2 {
+    font-size: 30px; /* Slightly reduce font size for tablets */
+    padding: 8px 15px;
+    margin-bottom: 60px;
+  }
+
+  .team {
+    flex-direction: column; /* Stack team members vertically */
+    gap: 25px;
+  }
+
+  .card {
+    max-width: 100%; /* Full width for cards on smaller tablets */
+    padding: 20px;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px; /* Adjust profile picture size */
+    top: -40px;
+  }
+
+  .card h3 {
+    font-size: 16px; /* Smaller font size for names */
+  }
+
+  .card p {
+    font-size: 12px; /* Adjust text for tablets */
+  }
+}
+
+/* Responsive Design for 768px (Smaller Tablets) */
+@media (max-width: 768px) {
+  .about-us h2 {
+    font-size: 28px; /* Reduce font size for smaller tablets */
+    padding: 8px 15px;
+    margin-bottom: 50px;
+  }
+
   .team {
     flex-direction: column;
     gap: 20px;
   }
 
   .card {
-    width: 80%; /* Reduce card width for smaller screens */
-    padding: 20px; /* Reduce padding */
-  }
-
-  .profile-pic {
-    width: 120px;
-    height: 120px; /* Smaller profile picture */
-  }
-
-  .card h3 {
-    font-size: 16px; /* Smaller font size */
-  }
-
-  .card p {
-    font-size: 12px; /* Smaller text */
-  }
-
-  .description {
-    font-size: 12px; /* Smaller text in description */
-  }
-}
-
-/* Responsive Design for Tablets and Smaller Screens */
-@media (max-width: 768px) {
-  .team {
-    flex-direction: column;
-    gap: 15px; /* Adjust gap between team cards */
-  }
-
-  .card {
-    width: 90%; /* Further adjust card width */
-    padding: 15px; /* Reduce padding */
+    max-width: 100%;
+    padding: 15px; /* Further reduce padding for tablets */
   }
 
   .profile-pic {
     width: 100px;
-    height: 100px; /* Further reduce profile picture size */
+    height: 100px; /* Reduce profile picture size */
+    top: -30px;
   }
 
   .card h3 {
-    font-size: 14px; /* Further reduce font size */
+    font-size: 14px; /* Smaller font size for mobile */
   }
 
   .card p {
-    font-size: 12px; /* Smaller font size */
-  }
-
-  .description {
-    font-size: 12px; /* Smaller font size for descriptions */
+    font-size: 11px; /* Adjust text for better readability */
   }
 }
 
-/* Responsive Design for Small Mobile Screens */
+/* Responsive Design for 480px (Mobile) */
 @media (max-width: 480px) {
+  .about-us h2 {
+    font-size: 16px; /* Further reduce heading font size */
+    padding: 8px 16px;
+    border-radius:10px;
+  }
+
   .team {
     flex-direction: column;
-    gap: 10px; /* Tighten gap between team cards */
+    gap: 60px;
   }
 
   .card {
-    width: 100%; /* Make cards take full width */
-    padding: 10px; /* Reduce padding */
+    max-width: 100%;
+    padding: 15px; /* Adjust padding for smaller devices */
   }
 
   .profile-pic {
     width: 90px;
-    height: 90px; /* Smaller profile picture */
+    height: 90px; /* Further reduce profile picture size */
+    top: -25px;
   }
 
   .card h3 {
-    font-size: 12px; /* Adjust heading font size */
+    font-size: 13px; /* Adjust text size for mobile */
   }
 
   .card p {
-    font-size: 10px; /* Adjust paragraph font size */
+    font-size: 10px; /* Adjust text size for mobile */
   }
 
   .description {
-    font-size: 10px; /* Adjust description font size */
+    font-size: 12px; /* Ensure readability on mobile */
   }
 }
+
 
 
 /* Testimonials Section */
@@ -981,6 +1003,7 @@ body {
 .controls {
   display: flex;
   gap: 10px;
+  justify-content: center;
 }
 
 .controls button {
@@ -1041,6 +1064,13 @@ body {
 
 /* Responsive Design for Medium Screens (Tablets and below) */
 @media (max-width: 912px) {
+
+  .success-stories h2 {
+    font-size: 30px; /* Slightly reduce font size for tablets */
+    padding: 8px 15px;
+    margin-bottom: 60px;
+  }
+
   .container {
     flex-direction: column;
     padding: 30px 20px;
@@ -1068,6 +1098,7 @@ body {
 
   .testimonials {
     gap: 15px; /* Adjust gap between testimonials */
+    width: 410px;
   }
 
   .testimonial-card {
@@ -1087,12 +1118,22 @@ body {
 
 /* Responsive Design for Tablets and Smaller Screens */
 @media (max-width: 768px) {
+
+  .success-stories h2 {
+    font-size: 28px; /* Reduce font size for smaller tablets */
+    padding: 8px 15px;
+    margin-bottom: 50px;
+  }
+
   .container {
     padding: 20px 10px;
   }
 
   .content {
     flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
   }
 
   .left-section h3 {
@@ -1114,8 +1155,15 @@ body {
 
 /* Responsive Design for Small Mobile Screens */
 @media (max-width: 480px) {
+
+  .success-stories h2 {
+    font-size: 16px; /* Further reduce heading font size */
+    padding: 8px 16px;
+    border-radius:10px;
+  }
+
   .container {
-    padding: 20px 10px;
+    padding: 30px 16px;
   }
 
   .testimonials-wrapper {
@@ -1124,6 +1172,7 @@ body {
 
   .testimonials {
     gap: 10px; /* Further reduce gap */
+    width: 350px;
   }
 
   .testimonial-card {
