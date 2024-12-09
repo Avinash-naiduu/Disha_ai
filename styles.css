@@ -10,6 +10,7 @@
 body {
   background-color: #fff;
   color: #2F3032;
+  justify-content: center;
 }
 
 /* Header Styling */
