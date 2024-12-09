@@ -216,7 +216,7 @@ nav ul li a.active::after {
   header {
       flex-direction: column;
       align-items: flex-start;
-      padding: 10px 20px;
+      margin: 10px 20px;
   }
 
   nav ul {
@@ -246,7 +246,9 @@ nav ul li a.active::after {
 
 @media screen and (max-width: 480px) {
   header {
-      padding: 10px;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 10px 20px;
   }
 
   .logo img {
