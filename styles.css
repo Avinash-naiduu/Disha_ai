@@ -390,12 +390,13 @@ body {
 
   .text {
       font-size: 26px;
-      width: 370px;
+      width: 340px;
   }
 
   .paragraph {
       font-size: 14px;
       line-height: 1.5;
+      max-width: 300px;
   }
 
   .illustration img {
