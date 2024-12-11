@@ -938,11 +938,11 @@ nav ul li a.active::after {
 }
 
 /* Left Section: Image */
-.profile-left {
+/* .profile-left { */
   /* flex: 0.3; */
   /* overflow: hidden; */
   /* width: 20%; */
-}
+/* } */
 
 .profile-image {
   width: 100%;
