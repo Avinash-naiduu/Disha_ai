@@ -25,7 +25,6 @@ header {
   left: 0;
   right: 0;
   z-index: 1000;
-  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
 }
 
 .logo img {
@@ -214,6 +213,39 @@ nav ul li a.active::after {
   }
 }
 /* Responsive Design */
+@media screen and (max-width: 912px) {
+  .hero-section {
+      padding: 20px 0;
+  }
+
+  .hero-section .banner-slider {
+      height: 500px;
+      margin-left: 20px;
+      margin-right: 20px;
+      gap: 20px;
+  }
+
+  .hero-section img {
+      max-height: 480px;
+      margin-top: 30px;
+      border-radius: 30px;
+  }
+
+  header {
+      padding: 15px 20px;
+  }
+
+  nav ul {
+      flex-direction: row;
+      gap: 15px;
+  }
+
+  .login-btn {
+      padding: 10px 24px;
+      font-size: 18px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   header {
       /* flex-direction: column; */
@@ -331,6 +363,49 @@ nav ul li a.active::after {
 }
 
 /* Responsive Design */
+
+@media screen and (max-width: 912px) {
+  .intro-section {
+      flex-direction: column;
+      margin: 30px;
+      gap: 25px;
+  }
+
+  .alightments {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+  }
+
+  .alightments .text-content {
+      width: 100%;
+      text-align: left;
+  }
+
+  .text {
+      font-size: 48px;
+      line-height: 1.3;
+  }
+
+  .paragraph {
+      font-size: 18px;
+      margin-top: 15px;
+      line-height: 1.5;
+      max-width: 480px;
+  }
+
+  .illustration {
+      width: 100%;
+      justify-content: center;
+      margin-top: 20px;
+  }
+
+  .illustration img {
+      max-width: 90%;
+      height: auto;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .intro-section {
       flex-direction: column;
@@ -421,6 +496,31 @@ nav ul li a.active::after {
 }
 
 /* Responsive for Statistics Section */
+@media screen and (max-width: 912px) {
+  .statistics-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    gap: 25px;
+    border-radius: 20px;
+    margin: 60px auto;
+  }
+
+  .stat-item {
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .stat-item h2 {
+    font-size: 40px;
+  }
+
+  .stat-item p {
+    font-size: 16px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .statistics-section {
     flex-direction: row;
@@ -493,6 +593,25 @@ nav ul li a.active::after {
 }
 
 /* Responsive for Vision Section */
+@media screen and (max-width: 912px) {
+  .vision-section {
+    padding: 30px 40px;
+  }
+
+  .vision-section h3 {
+    font-size: 30px;
+    padding: 10px 18px;
+    border-radius: 15px;
+  }
+
+  .video-player {
+    width: 80%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 15px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .vision-section {
     padding: 20px;
@@ -618,8 +737,6 @@ nav ul li a.active::after {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
 }
 
 .benfits-section {
@@ -699,8 +816,6 @@ nav ul li a.active::after {
   align-items: center;
   justify-content: center;
 }
-
-
 
 /* Responsive Design for Medium Screens (Tablets and below) */
 @media (max-width: 912px) {
@@ -818,18 +933,23 @@ nav ul li a.active::after {
   overflow: hidden;
   border: 2px solid #191A23;
   box-shadow: 0px 5px 0px 0px #191A23;
+  margin-top: 0px;
+  padding: 30px;
 }
 
 /* Left Section: Image */
 .profile-left {
-  flex: 0.3;
-  overflow: hidden;
-  width: 20%;
+  /* flex: 0.3; */
+  /* overflow: hidden; */
+  /* width: 20%; */
 }
 
 .profile-image {
-  width: 360px;
+  width: 100%;
+  height: 85%;
   object-fit: cover;
+  /* padding: 10px 10px 10px 10px; */
+  border-radius: 20px;
 }
 
 .section-title{
@@ -840,12 +960,12 @@ nav ul li a.active::after {
 
 /* Right Section: Content */
 .profile-right {
-  flex: 0.8;
-  padding: 30px 40px 10px 40px;
+  /* flex: 0.7; */
+  padding: 10px 40px 10px 40px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 70%;
+  /* width: 50%; */
 }
 
 /* Name and Title Section */
@@ -894,6 +1014,7 @@ nav ul li a.active::after {
   background-color: #fff;
   border: 2px solid #191A23;
   box-shadow: 0px 5px 0px 0px #191A23;
+  margin-top: 40px;
   }
 
 .content {
@@ -973,6 +1094,196 @@ nav ul li a.active::after {
 
 .logo-s{
   display: flex;
+}
+
+/* Responsive for 912px Screen */
+@media screen and (max-width: 912px) {
+  .about-us {
+    padding: 20px 30px;
+  }
+
+  .about-us h2 {
+    font-size: 30px;
+    padding: 8px 16px;
+    border-radius: 15px;
+  }
+
+  .profile-card {
+    flex-direction: column;
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  .profile-left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .profile-image {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .profile-right {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .profile-name {
+    font-size: 28px;
+  }
+
+  .profile-title {
+    font-size: 16px;
+  }
+
+  .profile-list {
+    font-size: 14px;
+  }
+
+  .Syam-card {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .image-placeholder {
+    height: 400px;
+  }
+
+  .image-placeholder img {
+    height: 100%;
+    max-width: 100%;
+    border-radius: 15px;
+  }
+
+  .logos img {
+    height: 80px;
+  }
+}
+
+/* Responsive for 748px Screen */
+@media screen and (max-width: 748px) {
+  .about-us {
+    padding: 15px;
+  }
+
+  .about-us h2 {
+    font-size: 25px;
+    padding: 8px 14px;
+    border-radius: 10px;
+  }
+
+  .profile-card {
+    flex-direction: column;
+    width: 100%;
+    margin: 15px auto;
+  }
+
+  .profile-left {
+    width: 100%;
+  }
+
+  .profile-image {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .profile-right {
+    padding: 15px;
+  }
+
+  .profile-name {
+    font-size: 24px;
+  }
+
+  .profile-title {
+    font-size: 14px;
+  }
+
+  .profile-list {
+    font-size: 13px;
+  }
+
+  .Syam-card {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .image-placeholder {
+    height: 300px;
+  }
+
+  .image-placeholder img {
+    height: 100%;
+    max-width: 100%;
+  }
+
+  .logos img {
+    height: 60px;
+  }
+}
+
+/* Responsive for 480px Screen */
+@media screen and (max-width: 480px) {
+  .about-us {
+    padding: 10px;
+  }
+
+  .about-us h2 {
+    font-size: 20px;
+    padding: 6px 12px;
+    border-radius: 8px;
+  }
+
+  .profile-card {
+    flex-direction: column;
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .profile-left {
+    width: 100%;
+  }
+
+  .profile-image {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .profile-right {
+    padding: 10px;
+  }
+
+  .profile-name {
+    font-size: 20px;
+  }
+
+  .profile-title {
+    font-size: 12px;
+  }
+
+  .profile-list {
+    font-size: 12px;
+  }
+
+  .Syam-card {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .image-placeholder {
+    height: 200px;
+  }
+
+  .image-placeholder img {
+    height: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  .logos img {
+    height: 40px;
+  }
 }
 
 
