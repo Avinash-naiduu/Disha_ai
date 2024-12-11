@@ -51,10 +51,9 @@
         </div>
     </main>
 
-        <!-- Footer -->
+  <!-- Footer -->
   <footer class="footer">
     <div class="footer__container">
-      <!-- Logo Section -->
       <div class="footer__logo-section">
         <img src="./Assets/DishaAI_Logo.png" alt="DISHA AI Logo" class="footer__logo" />
         <div class="footer__social-section">
@@ -66,20 +65,31 @@
             <a href="#" class="footer__social-icon"><i class="fab fa-twitter"></i></a>
           </div>
         </div>
-        <!-- <p class="footer__tagline">Dreams I Should Achieve</p> -->
       </div>
-  
       <!-- Contact Section -->
       <div class="footer__contact-section">
         <h3 class="footer__heading">Get In Touch</h3>
         <h3 class="footer__title">DishaAI Edutech Solutions Pvt Ltd</h3>
-        <p class="footer__address">
-          FiiRE, The Don Bosco College of Engineering, behind PWD office, Fatorda, Madgaon, Goa 403601
-        </p>
-        <p class="footer__contact">Call Us: <span>+91 73307 51516</span></p>
-        <p class="footer__email">
-          E-Mail: <a href="mailto:syam@dishaai.com">syam@dishaai.com</a>
-        </p>
+        <div class="address_details">
+          <div>
+            <p class="footer__address">
+              FiiRE, The Don Bosco College of Engineering, behind PWD office, Fatorda, Madgaon, Goa 403601
+            </p>
+            <p class="footer__contact">Call Us: <span>+91 73307 51516</span></p>
+            <p class="footer__email">
+              E-Mail: <a href="mailto:syam@dishaai.com">syam@dishaai.com</a>
+            </p>
+          </div>
+          <div>
+            <p class="footer__address">
+              FiiRE, The Don Bosco College of Engineering, behind PWD office, Fatorda, Madgaon, Goa 403601
+            </p>
+            <p class="footer__contact">Call Us: <span>+91 73307 51516</span></p>
+            <p class="footer__email">
+              E-Mail: <a href="mailto:syam@dishaai.com">syam@dishaai.com</a>
+            </p>
+          </div>
+        </div>
       </div>
       <!-- Useful Links Section -->
       <div class="footer__links-section">
@@ -100,17 +110,21 @@
   <div id="popup" class="popup-overlay">
     <div class="popup-content">
       <span class="close-btn">&times;</span>
-      <h2>Contact Us</h2>
+      <h2>Join us</h2>
       <form id="popup-form">
-        <label for="name">Name:</label>
+
+        <label for="name">Name<span style="color: crimson;">*</span></label>
         <input type="text" id="name" name="name" required>
         
-        <label for="email">Email:</label>
+        <label for="email">Email<span style="color: crimson;">*</span></label>
         <input type="email" id="email" name="email" required>
-        
+
+        <label for="Interested in">Interested in<span style="color: crimson;">*</span></label>
+        <input type="dropdown" id="dropdown" name="dropdown" required>
+          
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="4" required></textarea>
-        
+
         <button type="submit" class="submit-btn">Submit</button>
       </form>
     </div>
