@@ -6,7 +6,7 @@
     <title>DISHA Platform</title>
     <link rel="stylesheet" href="Blog details.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
+    <script src="script.js"></script>
   </head>
 
   <body>
@@ -31,7 +31,13 @@
 
     <main>
         <div class="blog-container">
-          <p class="blog-date">Blogs • 16 March 2023</p>
+          <div class="buttons-row">
+            <div><p class="blog-date">Blogs • 16 March 2023</p></div>
+            <div class="buttons-gap">
+              <a href="reachus.html" class="Contact-us-btn">Contact us</a>
+              <div class="Join-us-btn">Join Us </div>
+            </div>
+          </div>
           <h1 class="blog-title">Programming-Intuitively, Methodically, Enjoyably</h1>
           <img src="./Assets/Prime.png" alt="VR Headset" class="blog-image">
           <div>
@@ -89,5 +95,26 @@
       </div>
     </div>
   </footer>
+
+<!--popup-->
+  <div id="popup" class="popup-overlay">
+    <div class="popup-content">
+      <span class="close-btn">&times;</span>
+      <h2>Contact Us</h2>
+      <form id="popup-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+  </div>
+
 </body>
 </html>

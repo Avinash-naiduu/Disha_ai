@@ -61,3 +61,53 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   
+
+
+//popup
+
+document.addEventListener("DOMContentLoaded", () => {
+  const popup = document.getElementById("popup");
+  const openPopupBtn = document.querySelector(".Join-us-btn"); // Adjust this selector if needed
+  const closeBtn = document.querySelector(".close-btn");
+
+  if (openPopupBtn) {
+    // Open Popup
+    openPopupBtn.addEventListener("click", () => {
+      popup.style.display = "flex";
+    });
+  } else {
+    console.error("Join Us button not found. Check the class name or ensure it exists.");
+  }
+
+  if (closeBtn) {
+    // Close Popup
+    closeBtn.addEventListener("click", () => {
+      popup.style.display = "none";
+    });
+  } else {
+    console.error("Close button not found. Check the class name or ensure it exists.");
+  }
+
+  if (popup) {
+    // Close Popup on outside click
+    popup.addEventListener("click", (e) => {
+      if (e.target === popup) {
+        popup.style.display = "none";
+      }
+    });
+  } else {
+    console.error("Popup container not found. Check the ID or ensure it exists.");
+  }
+
+  const popupForm = document.getElementById("popup-form");
+  if (popupForm) {
+    // Form Submission
+    popupForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      alert("Form submitted successfully!");
+      popup.style.display = "none";
+    });
+  } else {
+    console.error("Popup form not found. Check the ID or ensure it exists.");
+  }
+});

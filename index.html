@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DISHA Platform</title>
     <link rel="stylesheet" href="styles.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="script.js"></script>
   </head>
 
@@ -181,40 +181,102 @@
       </div>
     </section>
 
-    <section class="about-us">
+  <section class="about-us">
       <h2>ABOUT US</h2>
-      <div class="team">
-        <!-- Card 1 -->
-        <div class="card">
-          <div class="profile-pic">
-            <img src="./Assets/Prahalad Karnam.png" alt="Prahalad Karnam" />
+      <!-- Profile Card Container -->
+  <div class="profile-card">
+    <!-- Left Section: Image -->
+    <div class="profile-left">
+      <img src="./Assets/Prahalad Karnam.png" alt="Person wearing VR headset" class="profile-image">
+    </div>
+
+    <!-- Right Section: Content -->
+    <div class="profile-right">
+      <!-- Name and Title Section -->
+      <div class="profile-header">
+        <h1 class="profile-name">Prahalad Karnam</h1>
+        <p class="profile-title">CEO and Co Founder </p>
+      </div>
+
+      <!-- Description Section -->
+      <div class="profile-intro">
+        <p class="profile-description">
+          A visionary leader and strategist, I bring 25+ years of global experience in consulting, leadership, education, coaching, and mentoring.
+        </p>
+      </div>
+
+      <!-- Academic Credentials Section -->
+      <div class="academic-section">
+        <h3 class="section-title">My academic credentials include:</h3>
+        <div class="list-1"><ul class="profile-list">
+          <li>Alumnus, Columbia Business School</li>
+          <li>Strategic Leadership Certification, Harvard Business School</li>
+         </ul>
+         <div class="academic-logos">
+          <img src="./Assets/Columbia Business School.png" alt="Columbia Business School logo">
+          <img src="./Assets/Harvard Business School.png" alt="Harvard Business School logo">
+         </div>
+        </div>
+      </div>
+
+      <!-- Professional Accomplishments Section -->
+      <div class="professional-section">
+        <h3 class="section-title">My professional accomplishments include:</h3>
+        <ul class="profile-list">
+          <li>Leading multi-million-dollar business units globally</li>
+          <li>Providing strategy consulting to top-tier clients like Google, GE, Unilever, and IBM</li>
+          <li>Designing ‘Smart Campus’ solutions for universities in the Middle East and Singapore</li>
+          <li>Serving on the Mentor Board for Columbia Business School’s ‘Leader as Coach’ program</li>
+        </ul>
+      </div>
+
+      <!-- Profession Section -->
+      <div class="Profession-section">
+        <h3 class="section-title">Vision for DishaAI</h3>
+        <p class="profile-description">
+          Through my travels and interactions with educational institutes, I recognized the need for a holistic education platform that leverages AI to bridge the gap between traditional education and industry needs. This inspired me to start (link unavailable), a pioneering AI-based education startup dedicated to empowering students to achieve their dreams.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="Syam-card">
+    <div class="content">
+      <div class="text-and-icons">
+          <div class="profile-header">
+            <h1 class="profile-name">Syam Ivaturi</h1>
+            <p class="profile-title">CMO & Co Founder</p>
           </div>
-          <h3>Prahalad Karnam</h3>
-          <p>CEO and Co Founder</p>
-          <p class="description">
-            21+ years of Global Experience Columbia Business School, Strategic
-            Leadership - Harvard Business School Strategy & Operations Consulting
-            Global Leader, CPG Industry Leader, Leader as Coach - Columbia Business
-            School (Mentor Board) People Strategist, Managed Global Change rollouts.
-            Setup and Ran Multi-M$ global business units, Visiting Professor - IIMs
-            and other reputed Universities Strategic Advisor and Mentor to Entrepreneurs.
+      <div class="logo-s">
+        <div>
+          <p class="syam-description">
+            As an accomplished professional with a strong academic foundation, I bring together expertise from various fields. I hold master’s degrees in marketing and business Analytics from IBM & REVA University, Bengaluru. I am currently pursuing further education (Customer Relationship Management) at the Indian Institute of Management Bangalore (IIMB).
+          </p>
+          <p class="syam-description">
+            With over 15+ years of experience in corporate engineering, marketing, and management, I’ve worked with renowned companies like DXC Technology, New York Life Insurance, and International Netherlands Group.
           </p>
         </div>
-        <!-- Card 2 -->
-        <div class="card">
-          <div class="profile-pic">
-            <img src="./Assets/Syam Ivaturi.jpeg" alt="Syam Ivaturi" />
-          </div>
-          <h3>Syam Ivaturi</h3>
-          <p>CMO and Co Founder</p>
-          <p class="description">
-            21+ years of Global Experience Business Analytics Professional,
-            Visiting Professor – REVA and other Universities Coach and Mentor to Indian & US
-            Insurance Professionals Corporate Member – NASSCOM Lifetime Corporate Member - AIMS.
+        <div class="logos">
+          <img src="./Assets/Columbia Business School.png" alt="IBM Logo" />
+          <img src="./Assets/Harvard Business School.png" alt="REVA University Logo" />
+        </div>
+      </div>
+        <div>
+          <p class="syam-description">
+            Recent years have seen my transition to AI-based research, an area I’m deeply passionate about. As a professional member of the Goa Founders Club and Jury member of IIT Mumbai E-Cell, I’m committed to fostering innovation and entrepreneurship.
+          </p>
+          <p class="syam-description">
+            My research has been published in prestigious international publications, including SCOPUS. I’ve also delivered lectures and mentored students on various topics, including Marketing, Finance, Supply Chain, HR Analytics, Project Management, and more.
           </p>
         </div>
       </div>
-    </section>
+      <div class="image-placeholder">
+        <img src="./Assets/SYAM PHOTO (1).png" alt="IBM Logo" />
+      </div>
+    </div>
+  </div>
+  
+  </section>
 
     <section class="success-stories">
       <h2>DISHAI SUCCESS STORIES</h2>
@@ -262,7 +324,6 @@
         </div>
       </div>
     </section>
-    
 
    <!-- Contact Section -->
   <section class="reach-us">
@@ -276,7 +337,8 @@
         </div>
       </div>
       <div class="right-section">
-        <form class="contact-form" id="contactForm">
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xbljeara"
+        method="POST">
           <div class="form-row">
             <div class="form-group">
               <label for="first-name">First Name<span>*</span></label>
@@ -327,44 +389,31 @@
         <h3 class="footer__title">DishaAI Edutech Solutions Pvt Ltd</h3>
         <div class="address_details">
           <div>
-            <p class="footer__address">
-              FiiRE, The Don Bosco College of Engineering, behind PWD office, Fatorda, Madgaon, Goa 403601
-            </p>
+            <p class="footer__address">FiiRE, The Don Bosco College of Engineering, behind PWD office, Fatorda, Madgaon, Goa 403601 </p>
             <p class="footer__contact">Call Us: <span>+91 73307 51516</span></p>
-            <p class="footer__email">
-              E-Mail: <a href="mailto:syam@dishaai.com">syam@dishaai.com</a>
+            <p class="footer__email">E-Mail: <a href="mailto:syam@dishaai.com">syam@dishaai.com</a>
             </p>
           </div>
           <div>
-            <p class="footer__address">
-              FiiRE, The Don Bosco College of Engineering, behind PWD office, Fatorda, Madgaon, Goa 403601
-            </p>
+            <p class="footer__address">102, INDUS SANGAM GALAXY, Visthar, Bengaluru, Karnataka 560077</p>
             <p class="footer__contact">Call Us: <span>+91 73307 51516</span></p>
-            <p class="footer__email">
-              E-Mail: <a href="mailto:syam@dishaai.com">syam@dishaai.com</a>
+            <p class="footer__email">E-Mail: <a href="mailto:syam@dishaai.com">syam@dishaai.com</a>
             </p>
           </div>
-        </div>
-        <!-- <p class="footer__address">
-          FiiRE, The Don Bosco College of Engineering, behind PWD office, Fatorda, Madgaon, Goa 403601
-        </p>
-        <p class="footer__contact">Call Us: <span>+91 73307 51516</span></p>
-        <p class="footer__email">
-          E-Mail: <a href="mailto:syam@dishaai.com">syam@dishaai.com</a>
-        </p> -->
+      
       </div>
-      <!-- Useful Links Section -->
-      <div class="footer__links-section">
-        <h3 class="footer__heading">Useful Links</h3>
-        <ul class="footer__list">
-          <li><a href="#" class="footer__link">About Us</a></li>
-          <li><a href="#" class="footer__link">Terms & Conditions</a></li>
-          <li><a href="#" class="footer__link">Refund & Cancellation</a></li>
-          <li><a href="#" class="footer__link">Privacy Policy</a></li>
-          <li><a href="#" class="footer__link">Product & Services</a></li>
-          <li><a href="#" class="footer__link">Contact Us</a></li>
-        </ul>
-      </div>
+    <!-- Useful Links Section -->
+    </div>
+    <div class="footer__links-section">
+      <h3 class="footer__heading">Useful Links</h3>
+      <ul class="footer__list">
+        <li><a href="#" class="footer__link">About Us</a></li>
+        <li><a href="#" class="footer__link">Terms & Conditions</a></li>
+        <li><a href="#" class="footer__link">Refund & Cancellation</a></li>
+        <li><a href="#" class="footer__link">Privacy Policy</a></li>
+        <li><a href="#" class="footer__link">Product & Services</a></li>
+        <li><a href="#" class="footer__link">Contact Us</a></li>
+      </ul>
     </div>
   </footer>
   </body>

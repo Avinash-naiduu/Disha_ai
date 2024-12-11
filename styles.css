@@ -77,7 +77,7 @@ nav ul li a.active::after {
 .login-btn {
   background-color: #FF7676;
   color: white;
-  padding: 10px 20px;
+  padding: 12px 38px;
   border-radius: 8px;
   font-weight: bold;
   border: none;
@@ -196,22 +196,23 @@ nav ul li a.active::after {
   margin-top: 60px;
 }
 
-/* Keyframes for sliding effect */
 @keyframes slide {
-  0%, 25% {
-      transform: translateX(0);
+  0%, 20% { 
+      transform: translateX(0); /* Show the 1st banner */ 
   }
-  33%, 58% {
-      transform: translateX(-100%); 
+  25%, 45% { 
+      transform: translateX(-100%); /* Show the 2nd banner */ 
   }
-  66%, 91% {
-      transform: translateX(-200%);
+  50%, 70% { 
+      transform: translateX(-200%); /* Show the 3rd banner */ 
   }
-  100% {
-      transform: translateX(0);
+  75%, 95% { 
+      transform: translateX(-100%); /* Go back to the 2nd banner */ 
+  }
+  100% { 
+      transform: translateX(0); /* Reset to the 1st*/
   }
 }
-
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   header {
@@ -271,20 +272,6 @@ nav ul li a.active::after {
       max-height: 280px;
       border-radius: 20px;
   }
-}
-
-  
- /* General Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Space Grotesk', sans-serif;
-  background-color: #fff;
-  color: #2F3032;
 }
 
 /* Intro Section */
@@ -564,7 +551,7 @@ body {
 }
 
 .offerings-section img {
-  width: 70%;
+  width: 60%;
   border-radius: 15px;
   margin: 10px 20px;
   display: flex;
@@ -667,7 +654,7 @@ body {
   line-height: 24px;
   text-align: left;
   padding-bottom: 12px;
-  color: #8E92BC;
+  color: #8e92bc;
   font-weight: 500;
 }
 
@@ -765,12 +752,11 @@ body {
   }
 }
 
-
-
 /* About Us Section */
 .about-us {
   text-align: center;
   padding: 20px;
+  justify-items: center;
 }
 
 .about-us h2 {
@@ -780,188 +766,234 @@ body {
   padding: 10px 20px;
   border-radius: 20px;
   font-weight: bold;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
   font-size: 35px;
 }
 
 /* Team Section */
-.team {
+.profile-card {
   display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.card {
+  flex-direction: row;
   background-color: #ffffff;
-  border-radius: 45px;
-  max-width: 540px;
-  text-align: center;
-  padding: 30px;
-  position: relative;
+  width: 90%;
+  /* max-width: 1200px; */
+  border-radius: 20px;
+  overflow: hidden;
   border: 2px solid #191A23;
   box-shadow: 0px 5px 0px 0px #191A23;
-  border: 2px 0px 0px 0px;
-  opacity: 1;
-  transition: opacity 0.5s ease;
 }
 
-.profile-pic {
-  position: absolute;
-  top: -50px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 140px;
-  height: 140px;
-  background-color: #ffffff;
-  border-radius: 50%;
+/* Left Section: Image */
+.profile-left {
+  flex: 0.3;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 20%;
 }
 
-.profile-pic img {
-  width: 100%;
-  height: 100%;
+.profile-image {
+  width: 360px;
   object-fit: cover;
-  align-content: top;
 }
 
-.card h3 {
-  margin-top: 80px;
+.section-title{
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/* Right Section: Content */
+.profile-right {
+  flex: 0.8;
+  padding: 30px 40px 10px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 70%;
+}
+
+/* Name and Title Section */
+.profile-header {
+  text-align: left;
+}
+
+.profile-name {
+  font-size: 34px;
+  font-weight: bold;
+  color: #191A23;
+  text-align: left;
+}
+
+.profile-title {
   font-size: 18px;
-  color: #333333;
+  color: #191A23;
+  margin-top: 6px;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 
-.card p {
+.profile-list{
+  font-size: 15px;
+  line-height: 2;
   color: #8e92bc;
-  margin: 5px 0;
-  font-size: 14px;
-  line-height: 20px;
+  text-align: left;
+  font-weight: 500;
+}
+
+.list-1{
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.Syam-card {
+  width: 90%;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 40px;
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  border: 2px solid #191A23;
+  box-shadow: 0px 5px 0px 0px #191A23;}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.text-and-icons {
+  flex: 2;
+  gap: 20px;
+}
+
+.image-placeholder {
+  flex: 1;
+  /* background-color: #ddd; */
+  border-radius: 10px;
+  height: 500px;
+  margin-left: 20px;
+}
+
+.image-placeholder img {
+  height: 500px;
+  border-radius: 20px;
+}
+.profile-header {
+  text-align: left;
+}
+
+.profile-name {
+  font-size: 34px;
+  font-weight: bold;
+  color: #191A23;
+  text-align: left;
+}
+
+.profile-title {
+  font-size: 18px;
+  color: #191A23;
+  margin-top: 6px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.profile-description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #8e92bc;
+  text-align: left;
+  font-weight: 500;
+}
+
+.icons-and-logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
 }
 
 .social-icons {
-  margin-top: 10px;
   display: flex;
-  justify-content: center;
   gap: 10px;
 }
 
-.social-icons i {
-  font-size: 18px;
-  color: #ff7676;
-  cursor: pointer;
+.logos {
+  /* display: flex; */
+  gap: 60px;
 }
 
-.description {
-  margin-top: 10px;
-  font-size: 14px;
-  color: #555555;
+.logos img {
+  height: 100px;
+  margin-left: 40px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.logo-s{
+  display: flex;
+}
+
+
+/* Intro Section */
+.profile-intro {
+  margin-bottom: 10px;
+}
+
+.syam-description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #8e92bc;
+  text-align: left;
+  font-weight: 500;
+  margin-bottom: 20px;
   text-align: justify;
+  /* width: 860px; */
 }
 
-/* Responsive Design for 912px (Tablets) */
-@media (max-width: 912px) {
-  .about-us h2 {
-    font-size: 30px; /* Slightly reduce font size for tablets */
-    padding: 8px 15px;
-    margin-bottom: 60px;
-  }
-
-  .team {
-    flex-direction: column; /* Stack team members vertically */
-    gap: 25px;
-  }
-
-  .card {
-    max-width: 100%; /* Full width for cards on smaller tablets */
-    padding: 20px;
-  }
-
-  .profile-pic {
-    width: 120px;
-    height: 120px; /* Adjust profile picture size */
-    top: -40px;
-  }
-
-  .card h3 {
-    font-size: 16px; /* Smaller font size for names */
-  }
-
-  .card p {
-    font-size: 12px; /* Adjust text for tablets */
-  }
+/* Academic Section */
+.academic-section {
+  margin-bottom: 10px;
 }
 
-/* Responsive Design for 768px (Smaller Tablets) */
-@media (max-width: 768px) {
-  .about-us h2 {
-    font-size: 28px; /* Reduce font size for smaller tablets */
-    padding: 8px 15px;
-    margin-bottom: 50px;
-  }
-
-  .team {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .card {
-    max-width: 100%;
-    padding: 15px; /* Further reduce padding for tablets */
-  }
-
-  .profile-pic {
-    width: 100px;
-    height: 100px; /* Reduce profile picture size */
-    top: -30px;
-  }
-
-  .card h3 {
-    font-size: 14px; /* Smaller font size for mobile */
-  }
-
-  .card p {
-    font-size: 11px; /* Adjust text for better readability */
-  }
+.academic-logos {
+  display: flex;
+  gap: 20px;
+  margin: 10px 0;
 }
 
-/* Responsive Design for 480px (Mobile) */
-@media (max-width: 480px) {
-  .about-us h2 {
-    font-size: 16px; /* Further reduce heading font size */
-    padding: 8px 16px;
-    border-radius:10px;
-  }
-
-  .team {
-    flex-direction: column;
-    gap: 60px;
-  }
-
-  .card {
-    max-width: 100%;
-    padding: 15px; /* Adjust padding for smaller devices */
-  }
-
-  .profile-pic {
-    width: 90px;
-    height: 90px; /* Further reduce profile picture size */
-    top: -25px;
-  }
-
-  .card h3 {
-    font-size: 13px; /* Adjust text size for mobile */
-  }
-
-  .card p {
-    font-size: 10px; /* Adjust text size for mobile */
-  }
-
-  .description {
-    font-size: 12px; /* Ensure readability on mobile */
-  }
+.academic-logos img {
+  height: 80px;
 }
 
+/* Professional Accomplishments */
+.professional-section {
+  margin-bottom: 10px;
+}
+
+/* Profession Section */
+.Profession-section {
+  margin-bottom: 20px;
+}
+
+/* Social Media Links */
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #555;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #007BFF;
+}
 
 
 /* Testimonials Section */

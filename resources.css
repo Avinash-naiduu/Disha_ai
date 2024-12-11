@@ -19,6 +19,12 @@ header {
   align-items: center;
   padding: 20px 50px;
   background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
 }
 
 .logo img {
@@ -36,20 +42,20 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #2F3032; /* Default text color */
+  color: #2F3032;
   font-weight: 500;
   font-size: 18px;
-  transition: color 0.3s ease; /* Smooth transition for color */
+  transition: color 0.3s ease;
 }
 
 /* Hover Effect for Text Links */
 nav ul li a:hover {
-  color: #FF7676; /* Change color on hover */
+  color: #FF7676;
 }
 
 /* Active Link Styling */
 nav ul li a.active {
-  color: #FF7676; /* Highlight color */
+  color: #FF7676;
   font-weight: bold;
   position: relative;
   font-size: 20px;
@@ -64,6 +70,206 @@ nav ul li a.active::after {
   bottom: -4px;
   left: 0;
   border-radius: 100px;
+}
+
+/* Login Button Styling */
+.login-btn {
+  background-color: #FF7676;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #FF5A5A;
+}
+
+/* Hamburger Menu Styling */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 100%;
+  height: 3px;
+  background-color: #2F3032;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Responsive Design for Header */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 20px;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: 0;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li a,
+  nav ul li .login-btn {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* Smallest Screen Adjustments */
+@media screen and (max-width: 480px) {
+  nav ul li a {
+    font-size: 14px;
+  }
+
+  .login-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* Hero Section Styling */
+.hero-section {
+  position: relative;
+  background-color: #fff;
+  text-align: center;
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.hero-section .banner-slider {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 90%;
+  height: 720px;
+  animation: slide 12s infinite;
+  gap: 30px;
+  border-radius: 20px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.hero-section .slide {
+  flex: 0 0 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.hero-section img {
+  width: 100%;
+  height: auto;
+  max-height: 680px;
+  object-fit: cover;
+  border-radius: 40px;
+  margin-top: 60px;
+}
+
+/* Keyframes for sliding effect */
+@keyframes slide {
+  0%, 25% {
+      transform: translateX(0);
+  }
+  33%, 58% {
+      transform: translateX(-100%); 
+  }
+  66%, 91% {
+      transform: translateX(-200%);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  header {
+      /* flex-direction: column; */
+      align-items: flex-start;
+      padding: 10px 30px;
+  }
+
+  nav ul {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  nav ul li {
+      margin: 5px 0;
+  }
+
+  .hero-section .banner-slider {
+      height: 400px;
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+
+  .hero-section img {
+      max-height: 380px;
+  }
+
+  .login-btn {
+      padding: 8px 20px;
+      font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+      padding: 10px;
+  }
+
+  .logo img {
+      height: 30px;
+  }
+
+  nav ul li a {
+      font-size: 16px;
+  }
+
+  .login-btn {
+      padding: 6px 16px;
+      font-size: 14px;
+  }
+
+  .hero-section .banner-slider {
+      height: 220px;
+  }
+
+  .hero-section img {
+      max-height: 280px;
+      border-radius: 20px;
+  }
 }
 
 /* Login Button Styling */
@@ -222,8 +428,7 @@ nav ul li a.active::after {
   color: #fff;
 }
 
-
-  /* Footer Styling */
+/* Default Footer Styling */
 .footer {
   background-color: #1e1e1e;
   padding: 40px 20px;
@@ -236,15 +441,14 @@ nav ul li a.active::after {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 80px;
+  gap: 40px;
 }
 
 .footer__logo-section {
   flex: 1;
-  min-width: 200px;
+  min-width: 570px;
   text-align: left;
   margin-left: 40px;
-
 }
 
 .footer__logo {
@@ -261,8 +465,8 @@ nav ul li a.active::after {
 .footer__contact-section,
 .footer__links-section,
 .footer__social-section {
-  flex: 0.33;
-  padding-right : 20px
+  flex: 1;
+  padding-right: 20px;
 }
 
 .footer__heading {
@@ -286,6 +490,7 @@ nav ul li a.active::after {
   margin-bottom: 10px;
   color: #8e92bc;
   font-weight: 400;
+  width: 200px;
 }
 
 .footer__email a {
@@ -339,4 +544,164 @@ nav ul li a.active::after {
   color: #ff7676;
 }
 
-  
+.reach-us {
+  text-align: center;
+  padding: 20px;
+}
+
+.reach-us h2 {
+  background-color: #FF7676;
+  color: black;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.address_details {
+  display: flex;
+  gap: 100px;
+}
+
+/* Responsive Styling */
+
+/* For screens 940px and below */
+@media screen and (max-width: 940px) {
+  .footer__container {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .footer__logo-section {
+    margin-left: 0;
+    text-align: center;
+    min-width: 100%;
+  }
+
+  .footer__logo {
+    width: 40%;
+    margin-bottom: 30px;
+  }
+
+  .footer__contact-section,
+  .footer__links-section,
+  .footer__social-section {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .footer__heading {
+    font-size: 16px;
+  }
+
+  .footer__title {
+    font-size: 14px;
+  }
+
+  .footer__address,
+  .footer__contact,
+  .footer__email {
+    font-size: 13px;
+  }
+
+  .footer__social-icons {
+    justify-content: center;
+  }
+
+  .reach-us h2 {
+    font-size: 30px;
+    padding: 8px 16px;
+  }
+
+  .address_details {
+    gap: 50px;
+  }
+}
+
+/* For screens 768px and below */
+@media screen and (max-width: 768px) {
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__logo-section {
+    margin-bottom: 20px;
+  }
+
+  .footer__logo {
+    width: 50%;
+  }
+
+  .footer__heading {
+    font-size: 15px;
+  }
+
+  .footer__title {
+    font-size: 13px;
+  }
+
+  .footer__address,
+  .footer__contact,
+  .footer__email {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .footer__social-icons {
+    gap: 10px;
+  }
+
+  .footer__social-icon {
+    font-size: 18px;
+  }
+
+  .reach-us h2 {
+    font-size: 28px;
+  }
+
+  .address_details {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+}
+
+/* For screens 480px and below */
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 20px 10px;
+  }
+
+  .footer__container {
+    gap: 20px;
+  }
+
+  .footer__logo {
+    width: 60%;
+  }
+
+  .footer__heading {
+    font-size: 14px;
+  }
+
+  .footer__title,
+  .footer__address,
+  .footer__contact,
+  .footer__email {
+    font-size: 12px;
+  }
+
+  .footer__social-icon {
+    font-size: 16px;
+  }
+
+  .reach-us h2 {
+    font-size: 24px;
+  }
+
+  .address_details {
+    gap: 10px;
+  }
+}
