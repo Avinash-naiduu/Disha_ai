@@ -222,7 +222,7 @@ textarea {
 }
 
 
-   /* Footer Styling */
+/* Default Footer Styling */
 .footer {
   background-color: #1e1e1e;
   padding: 40px 20px;
@@ -235,15 +235,14 @@ textarea {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 80px;
+  gap: 40px;
 }
 
 .footer__logo-section {
   flex: 1;
-  min-width: 200px;
+  min-width: 570px;
   text-align: left;
   margin-left: 40px;
-
 }
 
 .footer__logo {
@@ -260,8 +259,8 @@ textarea {
 .footer__contact-section,
 .footer__links-section,
 .footer__social-section {
-  flex: 0.33;
-  padding-right : 20px
+  flex: 1;
+  padding-right: 20px;
 }
 
 .footer__heading {
@@ -285,6 +284,7 @@ textarea {
   margin-bottom: 10px;
   color: #8e92bc;
   font-weight: 400;
+  width: 200px;
 }
 
 .footer__email a {
@@ -336,6 +336,168 @@ textarea {
 
 .footer__social-icon:hover {
   color: #ff7676;
+}
+
+.reach-us {
+  text-align: center;
+  padding: 20px;
+}
+
+.reach-us h2 {
+  background-color: #FF7676;
+  color: black;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.address_details {
+  display: flex;
+  gap: 100px;
+}
+
+/* Responsive Styling */
+
+/* For screens 940px and below */
+@media screen and (max-width: 940px) {
+  .footer__container {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .footer__logo-section {
+    margin-left: 0;
+    text-align: center;
+    min-width: 100%;
+  }
+
+  .footer__logo {
+    width: 40%;
+    margin-bottom: 30px;
+  }
+
+  .footer__contact-section,
+  .footer__links-section,
+  .footer__social-section {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .footer__heading {
+    font-size: 16px;
+  }
+
+  .footer__title {
+    font-size: 14px;
+  }
+
+  .footer__address,
+  .footer__contact,
+  .footer__email {
+    font-size: 13px;
+  }
+
+  .footer__social-icons {
+    justify-content: center;
+  }
+
+  .reach-us h2 {
+    font-size: 30px;
+    padding: 8px 16px;
+  }
+
+  .address_details {
+    gap: 50px;
+  }
+}
+
+/* For screens 768px and below */
+@media screen and (max-width: 768px) {
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__logo-section {
+    margin-bottom: 20px;
+  }
+
+  .footer__logo {
+    width: 50%;
+  }
+
+  .footer__heading {
+    font-size: 15px;
+  }
+
+  .footer__title {
+    font-size: 13px;
+  }
+
+  .footer__address,
+  .footer__contact,
+  .footer__email {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .footer__social-icons {
+    gap: 10px;
+  }
+
+  .footer__social-icon {
+    font-size: 18px;
+  }
+
+  .reach-us h2 {
+    font-size: 28px;
+  }
+
+  .address_details {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+}
+
+/* For screens 480px and below */
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 20px 10px;
+  }
+
+  .footer__container {
+    gap: 20px;
+  }
+
+  .footer__logo {
+    width: 60%;
+  }
+
+  .footer__heading {
+    font-size: 14px;
+  }
+
+  .footer__title,
+  .footer__address,
+  .footer__contact,
+  .footer__email {
+    font-size: 12px;
+  }
+
+  .footer__social-icon {
+    font-size: 16px;
+  }
+
+  .reach-us h2 {
+    font-size: 24px;
+  }
+
+  .address_details {
+    gap: 10px;
+  }
 }
 
   
