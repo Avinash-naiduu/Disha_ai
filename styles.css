@@ -933,9 +933,7 @@ nav ul li a.active::after {
   overflow: hidden;
   border: 2px solid #191A23;
   box-shadow: 0px 5px 0px 0px #191A23;
-  margin-top: 0px;
-  padding: 30px;
-}
+  padding: 30px 30px 0px 30px;}
 
 /* Left Section: Image */
 /* .profile-left { */
@@ -946,7 +944,7 @@ nav ul li a.active::after {
 
 .profile-image {
   width: 100%;
-  height: 85%;
+  height: 95%;
   object-fit: cover;
   /* padding: 10px 10px 10px 10px; */
   border-radius: 20px;
