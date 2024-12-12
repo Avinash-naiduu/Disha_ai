@@ -935,13 +935,6 @@ nav ul li a.active::after {
   box-shadow: 0px 5px 0px 0px #191A23;
   padding: 30px 30px 0px 30px;}
 
-/* Left Section: Image */
-/* .profile-left { */
-  /* flex: 0.3; */
-  /* overflow: hidden; */
-  /* width: 20%; */
-/* } */
-
 .profile-image {
   width: 100%;
   height: 95%;
@@ -1094,41 +1087,31 @@ nav ul li a.active::after {
   display: flex;
 }
 
-/* Responsive for 912px Screen */
+/* Responsive Design for 912px */
 @media screen and (max-width: 912px) {
-  .about-us {
-    padding: 20px 30px;
-  }
-
-  .about-us h2 {
-    font-size: 30px;
-    padding: 8px 16px;
-    border-radius: 15px;
-  }
-
   .profile-card {
-    flex-direction: column;
-    width: 95%;
-    margin: 20px auto;
-  }
-
-  .profile-left {
-    width: 100%;
-    text-align: center;
+    flex-direction: column; /* Stack content vertically */
+    padding: 20px; /* Adjust padding */
+    gap: 20px; /* Add gap between sections */
   }
 
   .profile-image {
     width: 100%;
-    max-width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px; /* Maintain consistent styling */
   }
 
   .profile-right {
     padding: 20px;
-    width: 100%;
+  }
+
+  .profile-header {
+    text-align: center;
   }
 
   .profile-name {
-    font-size: 28px;
+    font-size: 30px;
   }
 
   .profile-title {
@@ -1139,59 +1122,53 @@ nav ul li a.active::after {
     font-size: 14px;
   }
 
+  .list-1 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
   .Syam-card {
     flex-direction: column;
     padding: 20px;
   }
 
-  .image-placeholder {
-    height: 400px;
+  .content {
+    flex-direction: column;
+    gap: 15px;
   }
 
-  .image-placeholder img {
-    height: 100%;
-    max-width: 100%;
-    border-radius: 15px;
+  .image-placeholder {
+    height: 300px;
+    margin-left: 0;
   }
 
   .logos img {
-    height: 80px;
+    height: 90px;
+    margin: 10px;
   }
 }
 
-/* Responsive for 748px Screen */
-@media screen and (max-width: 748px) {
-  .about-us {
-    padding: 15px;
-  }
-
-  .about-us h2 {
-    font-size: 25px;
-    padding: 8px 14px;
-    border-radius: 10px;
-  }
-
+/* Responsive Design for 768px */
+@media screen and (max-width: 768px) {
   .profile-card {
-    flex-direction: column;
-    width: 100%;
-    margin: 15px auto;
-  }
-
-  .profile-left {
-    width: 100%;
+    padding: 15px;
+    gap: 15px;
   }
 
   .profile-image {
-    width: 100%;
-    max-width: 250px;
+    height: 100%;
   }
 
   .profile-right {
     padding: 15px;
   }
 
+  .profile-header {
+    text-align: center;
+  }
+
   .profile-name {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .profile-title {
@@ -1202,58 +1179,58 @@ nav ul li a.active::after {
     font-size: 13px;
   }
 
+  .list-1 {
+    flex-direction: column;
+    gap: 15px;
+  }
+
   .Syam-card {
     flex-direction: column;
     padding: 15px;
+    gap: 15px;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 15px;
   }
 
   .image-placeholder {
-    height: 300px;
+    height: 250px;
+    margin-left: 0;
   }
 
-  .image-placeholder img {
-    height: 100%;
-    max-width: 100%;
+  .social-icons {
+    gap: 10px;
   }
 
   .logos img {
-    height: 60px;
+    height: 80px;
+    margin: 10px;
   }
 }
 
-/* Responsive for 480px Screen */
+/* Responsive Design for 480px */
 @media screen and (max-width: 480px) {
-  .about-us {
-    padding: 10px;
-  }
-
-  .about-us h2 {
-    font-size: 20px;
-    padding: 6px 12px;
-    border-radius: 8px;
-  }
-
   .profile-card {
-    flex-direction: column;
-    width: 100%;
-    margin: 10px auto;
-  }
-
-  .profile-left {
-    width: 100%;
+    padding: 10px;
+    gap: 10px;
   }
 
   .profile-image {
-    width: 100%;
-    max-width: 200px;
+    height: 200px;
   }
 
   .profile-right {
     padding: 10px;
   }
 
+  .profile-header {
+    text-align: center;
+  }
+
   .profile-name {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .profile-title {
@@ -1264,25 +1241,36 @@ nav ul li a.active::after {
     font-size: 12px;
   }
 
-  .Syam-card {
+  .list-1 {
     flex-direction: column;
+    gap: 10px;
+  }
+
+  .Syam-card {
     padding: 10px;
+    gap: 10px;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 10px;
   }
 
   .image-placeholder {
     height: 200px;
+    margin-left: 0;
   }
 
-  .image-placeholder img {
-    height: 100%;
-    max-width: 100%;
-    border-radius: 10px;
+  .social-icons {
+    gap: 8px;
   }
 
   .logos img {
-    height: 40px;
+    height: 70px;
+    margin: 5px;
   }
 }
+
 
 
 /* Intro Section */
@@ -1702,7 +1690,59 @@ textarea {
   background-color: #ff4f4f;
 }
 
-/* Responsive Design for Tablets and Smaller Screens (max-width: 768px) */
+
+/* Responsive Design for 912px */
+@media (max-width: 912px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .left1-section {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .left1-section h1 {
+    font-size: 36px; /* Adjust heading font size */
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .illustration1 img {
+    max-width: 85%; /* Resize image for better display */
+  }
+
+  .right-section {
+    padding: 40px 30px; /* Adjust padding for a cleaner layout */
+  }
+
+  .contact-form {
+    gap: 25px; /* Maintain adequate spacing between form fields */
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 20px; /* Increase gap between rows */
+  }
+
+  .form-group {
+    flex: 1;
+  }
+
+  input, textarea {
+    font-size: 16px; /* Slightly reduce font size */
+    padding: 14px; /* Adjust padding for better usability */
+  }
+
+  .submit-button {
+    width: 100%; /* Make the submit button full width */
+    margin-top: 40px;
+    padding: 14px 24px; /* Adjust button padding */
+  }
+}
+
+/* Responsive Design (max-width: 768px) */
 @media (max-width: 768px) {
   .contact-container {
     flex-direction: column;
@@ -1974,6 +2014,57 @@ textarea {
     gap: 50px;
   }
 }
+
+/* Responsive Design for 912px */
+@media screen and (max-width: 912px) {
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; /* Add spacing between sections */
+  }
+
+  .footer__logo-section {
+    margin-bottom: 25px;
+  }
+
+  .footer__logo {
+    width: 45%; /* Resize logo */
+  }
+
+  .footer__heading {
+    font-size: 16px; /* Adjust heading font size */
+  }
+
+  .footer__title {
+    font-size: 14px; /* Adjust title font size */
+  }
+
+  .footer__address,
+  .footer__contact,
+  .footer__email {
+    font-size: 13px; /* Adjust font size for better readability */
+    text-align: center; /* Center-align text */
+  }
+
+  .footer__social-icons {
+    gap: 15px; /* Adjust spacing between social icons */
+  }
+
+  .footer__social-icon {
+    font-size: 20px; /* Adjust icon size */
+  }
+
+  .reach-us h2 {
+    font-size: 30px; /* Adjust heading font size */
+  }
+
+  .address_details {
+    flex-direction: column;
+    gap: 40px; /* Increase gap between address details */
+    text-align: center;
+  }
+}
+
 
 /* For screens 768px and below */
 @media screen and (max-width: 768px) {
