@@ -461,6 +461,11 @@ nav ul li a.active::after {
   gap: 15px;
 }
 
+.ofc_type {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
 .footer__social-icon {
   color: #8e92bc;
   font-size: 20px;

@@ -324,6 +324,7 @@ nav ul li a.active::after {
   .section {
     padding: 15px;
     gap: 10px;
+    margin-top: 90px;
   }
 
   .card {
@@ -490,6 +491,11 @@ nav ul li a.active::after {
 .address_details {
   display: flex;
   gap: 100px;
+}
+
+.ofc_type {
+  font-size: 15px;
+  margin-bottom: 10px;
 }
 
 /* Responsive Styling for screens 940px and below */

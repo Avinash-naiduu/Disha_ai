@@ -491,6 +491,10 @@ nav ul li a.active::after {
   display: flex;
   gap: 100px;
 }
+.ofc_type {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
 
 /* Responsive Styling for screens 940px and below */
 @media screen and (max-width: 940px) {
