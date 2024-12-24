@@ -1134,7 +1134,7 @@ nav ul li a.active::after {
 }
 
 .description2 {
-  font-size: 10px;
+  font-size: 15px;
   color: #555;
   line-height: 1.8;
   font-weight: 500;
@@ -1187,6 +1187,10 @@ nav ul li a.active::after {
   .description {
     font-size: 14px;
   }
+
+  .description2 {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1222,6 +1226,10 @@ nav ul li a.active::after {
     font-size: 14px;
   }
 
+  .description2 {
+    font-size: 14px;
+  }
+
   .logos {
     flex-direction: column;
     gap: 20px;
@@ -1252,6 +1260,10 @@ nav ul li a.active::after {
   }
 
   .description {
+    font-size: 10px;
+  }
+
+  .description2 {
     font-size: 10px;
   }
 }
