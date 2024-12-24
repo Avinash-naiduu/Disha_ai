@@ -225,6 +225,7 @@ nav ul li a.active::after {
   align-items: center;
   padding: 60px 20px;
   /* background-color: #2F3032; */
+  margin-top: 80px;
 }
 
 .contact-container {
