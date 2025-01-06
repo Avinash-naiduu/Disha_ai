@@ -158,6 +158,7 @@ nav ul li a.active::after {
 
   .hamburger {
     display: flex;
+    width: auto;
   }
 }
 
