@@ -7,6 +7,9 @@
   <title>DISHA Platform</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
   <script src="script.js"></script>
 </head>
 
@@ -34,18 +37,20 @@
   </header>
 
   <section class="hero-section">
-    <div class="banner-slider">
-      <div class="slide">
+    <div class="owl-carousel owl-theme">
+      <div class="item">
         <img src="./Assets/how-do-you-identify-and-nurture-the-right-skill-set-for-your-child.png" alt="Banner 1">
       </div>
-      <div class="slide">
+      <div class="item">
         <img src="./Assets/Do-you-know-your-child’s-interest-AND-strengths.png" alt="Banner 2">
       </div>
-      <div class="slide">
+      <div class="item">
         <img src="./Assets/Are-you-Worried-about-YOUR-CHILD’S-FUTURE.png" alt="Banner 3">
       </div>
     </div>
   </section>
+
+
 
   <section class="intro-section">
     <div class="alightments">
@@ -213,10 +218,13 @@
         </div>
         <div style="display: flex;">
           <div class="description2">
-            I hold master’s degrees in Marketing and Business Analytics and am currently studying CRM at IIM Bangalore. With 15+ years in corporate roles, I’ve worked with companies like DXC Technology and ING Group, gaining expertise in engineering, marketing, and management.
-            Passionate about AI research, I’m a Goa Founders Club member and IIT Mumbai E-Cell Jury member. My work is published in SCOOPUS journals, and I mentor students in areas like Marketing, Finance, and HR Analytics.
+            I hold master’s degrees in Marketing and Business Analytics and am currently studying CRM at IIM Bangalore.
+            With 15+ years in corporate roles, I’ve worked with companies like DXC Technology and ING Group, gaining
+            expertise in engineering, marketing, and management.
+            Passionate about AI research, I’m a Goa Founders Club member and IIT Mumbai E-Cell Jury member. My work is
+            published in SCOOPUS journals, and I mentor students in areas like Marketing, Finance, and HR Analytics.
           </div>
-    </div>
+        </div>
   </section>
 
   <!-- Contact Section -->
@@ -326,7 +334,23 @@
     </div>
   </footer>
 
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 20,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        items: 1,
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn'
+      });
+    });
+  </script>
 </body>
 
 </html>

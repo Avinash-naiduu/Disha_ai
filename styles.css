@@ -162,149 +162,148 @@ nav ul li a.active::after {
   }
 }
 
-/* Hero Section Styling */
+
+/* Custom Styling for the Carousel */
 .hero-section {
+  padding: 40px 40px 0;
+}
+
+.owl-carousel .item {
   position: relative;
-  background-color: #fff;
-  text-align: center;
-  padding: 40px 0;
   overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
 }
 
-.hero-section .banner-slider {
-  display: flex;
-  flex-wrap: nowrap;
-  width: 90%;
-  height: 720px;
-  animation: slide 12s infinite;
-  gap: 30px;
-  border-radius: 20px;
-  margin-left: 60px;
-  margin-right: 60px;
-}
-
-.hero-section .slide {
-  flex: 0 0 100%;
-  transition: transform 0.5s ease-in-out;
-}
-
-.hero-section img {
+.owl-carousel .item img {
   width: 100%;
   height: auto;
-  max-height: 680px;
   object-fit: cover;
-  border-radius: 40px;
-  margin-top: 60px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
-@keyframes slide {
-  0%, 20% { 
-      transform: translateX(0); /* Show the 1st banner */ 
-  }
-  25%, 45% { 
-      transform: translateX(-100%); /* Show the 2nd banner */ 
-  }
-  50%, 70% { 
-      transform: translateX(-200%); /* Show the 3rd banner */ 
-  }
-  75%, 95% { 
-      transform: translateX(-100%); /* Go back to the 2nd banner */ 
-  }
-  100% { 
-      transform: translateX(0); /* Reset to the 1st*/
-  }
+/* Dots styling */
+.owl-dots {
+  margin-top: 20px;
 }
+
+.owl-dot {
+  width: 12px;
+  height: 12px;
+  background: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.owl-dot.active {
+  background: #555;
+}
+
+/* Add fade effect for transition */
+.owl-carousel .owl-item {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.owl-carousel .owl-item.active {
+  opacity: 1;
+}
+
+
 /* Responsive Design */
 @media screen and (max-width: 912px) {
   .hero-section {
-      padding: 20px 0;
+    padding: 20px 0;
   }
 
   .hero-section .banner-slider {
-      height: 500px;
-      margin-left: 20px;
-      margin-right: 20px;
-      gap: 20px;
+    height: 500px;
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 20px;
   }
 
   .hero-section img {
-      max-height: 480px;
-      margin-top: 30px;
-      border-radius: 30px;
+    max-height: 480px;
+    margin-top: 30px;
+    border-radius: 30px;
   }
 
   header {
-      padding: 15px 20px;
+    padding: 15px 20px;
   }
 
   nav ul {
-      flex-direction: row;
-      gap: 15px;
+    flex-direction: row;
+    gap: 15px;
   }
 
   .login-btn {
-      padding: 10px 24px;
-      font-size: 18px;
+    padding: 10px 24px;
+    font-size: 18px;
   }
 }
 
 @media screen and (max-width: 768px) {
   header {
-      /* flex-direction: column; */
-      align-items: flex-start;
-      padding: 10px 30px;
+    /* flex-direction: column; */
+    align-items: flex-start;
+    padding: 10px 30px;
   }
 
   nav ul {
-      flex-direction: column;
-      gap: 10px;
+    flex-direction: column;
+    gap: 10px;
   }
 
   nav ul li {
-      margin: 5px 0;
+    margin: 5px 0;
   }
 
   .hero-section .banner-slider {
-      height: 400px;
-      margin-left: 10px;
-      margin-right: 10px;
+    height: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .hero-section img {
-      max-height: 380px;
+    max-height: 380px;
   }
 
   .login-btn {
-      padding: 8px 20px;
-      font-size: 16px;
+    padding: 8px 20px;
+    font-size: 16px;
   }
 }
 
 @media screen and (max-width: 480px) {
   header {
-      padding: 10px;
+    padding: 10px;
   }
 
   .logo img {
-      height: 30px;
+    height: 30px;
   }
 
   nav ul li a {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .login-btn {
-      padding: 6px 16px;
-      font-size: 14px;
+    padding: 6px 16px;
+    font-size: 14px;
   }
 
   .hero-section .banner-slider {
-      height: 220px;
+    height: 220px;
   }
 
   .hero-section img {
-      max-height: 280px;
-      border-radius: 20px;
+    max-height: 280px;
+    border-radius: 20px;
   }
 }
 
@@ -369,108 +368,108 @@ nav ul li a.active::after {
 
 @media screen and (max-width: 912px) {
   .intro-section {
-      flex-direction: column;
-      margin: 30px;
-      gap: 25px;
+    flex-direction: column;
+    margin: 30px;
+    gap: 25px;
   }
 
   .alightments {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
   }
 
   .alightments .text-content {
-      width: 100%;
-      text-align: left;
+    width: 100%;
+    text-align: left;
   }
 
   .text {
-      font-size: 48px;
-      line-height: 1.3;
+    font-size: 48px;
+    line-height: 1.3;
   }
 
   .paragraph {
-      font-size: 18px;
-      margin-top: 15px;
-      line-height: 1.5;
-      max-width: 480px;
+    font-size: 18px;
+    margin-top: 15px;
+    line-height: 1.5;
+    max-width: 480px;
   }
 
   .illustration {
-      width: 100%;
-      justify-content: center;
-      margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
   }
 
   .illustration img {
-      max-width: 90%;
-      height: auto;
+    max-width: 90%;
+    height: auto;
   }
 }
 
 @media screen and (max-width: 768px) {
   .intro-section {
-      flex-direction: column;
-      margin: 20px;
-      gap: 20px;
+    flex-direction: column;
+    margin: 20px;
+    gap: 20px;
   }
 
   .alightments {
-      flex-direction: column;
-      align-items: left;
-      display: flex;
-      align-items: flex-start;
+    flex-direction: column;
+    align-items: left;
+    display: flex;
+    align-items: flex-start;
   }
 
   .alightments .text-content {
-      width: 100%;
-      text-align: left;
+    width: 100%;
+    text-align: left;
   }
 
   .text {
-      font-size: 36px;
-      line-height: 1.4;
+    font-size: 36px;
+    line-height: 1.4;
   }
 
   .paragraph {
-      font-size: 16px;
-      margin-top: 15px;
-      width: 340px;
+    font-size: 16px;
+    margin-top: 15px;
+    width: 340px;
   }
 
   .illustration {
-      width: 100%;
-      margin-top: 20px;
+    width: 100%;
+    margin-top: 20px;
   }
 
   .illustration img {
-      max-width: 80%;
+    max-width: 80%;
   }
 }
 
 @media screen and (max-width: 480px) {
   .intro-section {
-      margin: 10px;
+    margin: 10px;
   }
 
   .text {
-      font-size: 26px;
-      width: 280px;
+    font-size: 26px;
+    width: 280px;
   }
 
   .paragraph {
-      font-size: 14px;
-      line-height: 1.5;
-      max-width: 280px;
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 280px;
   }
 
   .illustration img {
-      max-width: 100%;
+    max-width: 100%;
   }
 }
 
-  
+
 /* Statistics Section Styling */
 .statistics-section {
   display: flex;
@@ -493,17 +492,17 @@ nav ul li a.active::after {
   color: white;
 }
 
-.stat-item0{
+.stat-item0 {
   font-size: 20px;
   color: #EC6832;
 }
 
-.stat-item1{
+.stat-item1 {
   font-size: 20px;
   color: #80C4E9;
 }
 
-.stat-item2{
+.stat-item2 {
   font-size: 20px;
   color: #FFCD4B;
 }
@@ -533,17 +532,17 @@ nav ul li a.active::after {
     font-size: 16px;
   }
 
-  .stat-item0{
+  .stat-item0 {
     font-size: 16px;
     color: #FF7676;
   }
 
-  .stat-item1{
+  .stat-item1 {
     font-size: 16px;
     color: #80C4E9;
   }
-  
-  .stat-item2{
+
+  .stat-item2 {
     font-size: 16px;
     color: #FFCD4B;
   }
@@ -570,17 +569,17 @@ nav ul li a.active::after {
     font-size: 13px;
   }
 
-  .stat-item0{
+  .stat-item0 {
     font-size: 13px;
     color: #FF7676;
   }
 
-  .stat-item1{
+  .stat-item1 {
     font-size: 13px;
     color: #80C4E9;
   }
-  
-  .stat-item2{
+
+  .stat-item2 {
     font-size: 13px;
     color: #FFCD4B;
   }
@@ -600,17 +599,17 @@ nav ul li a.active::after {
     font-size: 12px;
   }
 
-  .stat-item0{
+  .stat-item0 {
     font-size: 12px;
     color: #FF7676;
   }
 
-  .stat-item1{
+  .stat-item1 {
     font-size: 12px;
     color: #80C4E9;
   }
-  
-  .stat-item2{
+
+  .stat-item2 {
     font-size: 12px;
     color: #FFCD4B;
   }
@@ -713,7 +712,8 @@ nav ul li a.active::after {
   display: flex;
   justify-content: center;
   margin-top: 40px;
-  flex-wrap: wrap; /* Allow items to wrap */
+  flex-wrap: wrap;
+  /* Allow items to wrap */
 }
 
 .offerings-section h3 {
@@ -739,15 +739,18 @@ nav ul li a.active::after {
 @media (max-width: 912px) {
   .offerings-content {
     flex-direction: column;
-    gap: 20px; /* Add space between elements */
+    gap: 20px;
+    /* Add space between elements */
   }
 
   .offerings-section img {
-    width: 80%; /* Adjust image width */
+    width: 80%;
+    /* Adjust image width */
   }
 
   .offerings-section h3 {
-    font-size: 30px; /* Adjust font size */
+    font-size: 30px;
+    /* Adjust font size */
   }
 }
 
@@ -759,30 +762,37 @@ nav ul li a.active::after {
   }
 
   .offerings-section img {
-    width: 90%; /* Further adjust image width */
-    margin: 20px auto; /* Center image with auto margin */
+    width: 90%;
+    /* Further adjust image width */
+    margin: 20px auto;
+    /* Center image with auto margin */
   }
 
   .offerings-section h3 {
-    font-size: 28px; /* Adjust heading font size */
+    font-size: 28px;
+    /* Adjust heading font size */
   }
 }
 
 /* Responsive Design for Small Mobile Screens */
 @media (max-width: 480px) {
   .offerings-section {
-    padding: 20px 10px; /* Reduce padding */
+    padding: 20px 10px;
+    /* Reduce padding */
   }
 
   .offerings-section img {
-    width: 100%; /* Make images fully responsive */
-    margin: 10px 0; /* Adjust margin for small screens */
+    width: 100%;
+    /* Make images fully responsive */
+    margin: 10px 0;
+    /* Adjust margin for small screens */
   }
 
   .offerings-section h3 {
-    font-size: 16px; /* Further reduce heading font size */
+    font-size: 16px;
+    /* Further reduce heading font size */
     padding: 8px 16px;
-    border-radius:10px;
+    border-radius: 10px;
   }
 }
 
@@ -859,7 +869,7 @@ nav ul li a.active::after {
   justify-content: center;
 }
 
-.Teachers{
+.Teachers {
   background-color: #F8EBC8;
   width: 50%;
   display: flex;
@@ -867,7 +877,7 @@ nav ul li a.active::after {
   justify-content: center;
 }
 
-.Schools{
+.Schools {
   background-color: #fff0f0;
   width: 50%;
   display: flex;
@@ -878,87 +888,110 @@ nav ul li a.active::after {
 /* Responsive Design for Medium Screens (Tablets and below) */
 @media (max-width: 912px) {
   .benefit-card {
-    width: 70%; /* Adjust width of benefit cards */
-    padding: 40px; /* Reduce padding */
+    width: 70%;
+    /* Adjust width of benefit cards */
+    padding: 40px;
+    /* Reduce padding */
   }
 
   .benfits-section h3 {
-    font-size: 30px; /* Smaller font for headings */
+    font-size: 30px;
+    /* Smaller font for headings */
   }
 
   .benfits-section h4 {
-    font-size: 38px; /* Smaller font for subheadings */
+    font-size: 38px;
+    /* Smaller font for subheadings */
   }
 
   .benfits-section h5 {
-    font-size: 26px; /* Adjust h5 font size */
+    font-size: 26px;
+    /* Adjust h5 font size */
   }
 
   .benfits-section p {
-    font-size: 14px; /* Smaller text for paragraphs */
+    font-size: 14px;
+    /* Smaller text for paragraphs */
   }
 
   .benfits-section img {
-    width: 90%; /* Make image width more responsive */
+    width: 90%;
+    /* Make image width more responsive */
   }
 }
 
 /* Responsive Design for Tablets and Smaller Screens */
 @media (max-width: 768px) {
   .benefit-card {
-    width: 80%; /* Further adjust width for smaller screens */
-    padding: 30px; /* Adjust padding */
+    width: 80%;
+    /* Further adjust width for smaller screens */
+    padding: 30px;
+    /* Adjust padding */
   }
 
   .benfits-section h3 {
-    font-size: 28px; /* Further reduce font size */
+    font-size: 28px;
+    /* Further reduce font size */
   }
 
   .benfits-section h4 {
-    font-size: 32px; /* Smaller subheading font */
+    font-size: 32px;
+    /* Smaller subheading font */
   }
 
   .benfits-section h5 {
-    font-size: 24px; /* Smaller h5 font size */
+    font-size: 24px;
+    /* Smaller h5 font size */
   }
 
   .benfits-section p {
-    font-size: 14px; /* Ensure paragraph text remains readable */
+    font-size: 14px;
+    /* Ensure paragraph text remains readable */
   }
 
   .benfits-section img {
-    width: 100%; /* Make image full width */
+    width: 100%;
+    /* Make image full width */
   }
 }
 
 /* Responsive Design for Small Mobile Screens */
 @media (max-width: 480px) {
   .benefit-card {
-    width: 50%; /* Make benefit cards more compact */
-    padding: 20px; /* Reduce padding further */
+    width: 50%;
+    /* Make benefit cards more compact */
+    padding: 20px;
+    /* Reduce padding further */
   }
 
   .benfits-section h3 {
-    font-size: 16px; /* Further reduce heading font size */
+    font-size: 16px;
+    /* Further reduce heading font size */
     padding: 8px 16px;
-    border-radius:10px;  }
+    border-radius: 10px;
+  }
 
   .benfits-section h4 {
-    font-size: 28px; /* Smaller subheading font */
+    font-size: 28px;
+    /* Smaller subheading font */
   }
 
   .benfits-section h5 {
-    font-size: 19px; /* Further reduce h5 size */
+    font-size: 19px;
+    /* Further reduce h5 size */
   }
 
   .benfits-section p {
-    font-size: 12px; /* Reduce paragraph font size */
+    font-size: 12px;
+    /* Reduce paragraph font size */
     line-height: 1.5;
   }
 
   .benfits-section img {
-    width: 100%; /* Ensure image takes full width on mobile */
-    margin-bottom: 20px; /* Add margin for spacing */
+    width: 100%;
+    /* Ensure image takes full width on mobile */
+    margin-bottom: 20px;
+    /* Add margin for spacing */
   }
 }
 
@@ -1139,7 +1172,8 @@ nav ul li a.active::after {
     gap: 20px;
   }
 
-  .logosimage1, .logosimage2 {
+  .logosimage1,
+  .logosimage2 {
     height: 50px;
   }
 }
@@ -1276,7 +1310,8 @@ nav ul li a.active::after {
   .syam-description {
     font-size: 12px;
     line-height: 1.3;
-    text-align: left; /* Less justified text for better readability */
+    text-align: left;
+    /* Less justified text for better readability */
   }
 
   .academic-logos {
@@ -1409,7 +1444,8 @@ nav ul li a.active::after {
 @media (max-width: 912px) {
 
   .success-stories h2 {
-    font-size: 30px; /* Slightly reduce font size for tablets */
+    font-size: 30px;
+    /* Slightly reduce font size for tablets */
     padding: 8px 15px;
     margin-bottom: 60px;
   }
@@ -1437,7 +1473,8 @@ nav ul li a.active::after {
   }
 
   .left-section h3 {
-    font-size: 28px; /* Adjust heading size for smaller screens */
+    font-size: 28px;
+    /* Adjust heading size for smaller screens */
   }
 
   .testimonials-wrapper {
@@ -1445,22 +1482,26 @@ nav ul li a.active::after {
   }
 
   .testimonials {
-    gap: 15px; /* Adjust gap between testimonials */
+    gap: 15px;
+    /* Adjust gap between testimonials */
     width: 410px;
   }
 
   .testimonial-card {
     flex: 0 0 100%;
-    max-width: 100%; /* Cards take full width on smaller screens */
+    max-width: 100%;
+    /* Cards take full width on smaller screens */
     padding: 15px;
   }
 
   .testimonial-card p {
-    font-size: 14px; /* Reduce text size */
+    font-size: 14px;
+    /* Reduce text size */
   }
 
   .testimonial-card span {
-    font-size: 12px; /* Adjust span size */
+    font-size: 12px;
+    /* Adjust span size */
   }
 }
 
@@ -1468,7 +1509,8 @@ nav ul li a.active::after {
 @media (max-width: 768px) {
 
   .success-stories h2 {
-    font-size: 28px; /* Reduce font size for smaller tablets */
+    font-size: 28px;
+    /* Reduce font size for smaller tablets */
     padding: 8px 15px;
     margin-bottom: 50px;
   }
@@ -1491,7 +1533,8 @@ nav ul li a.active::after {
   }
 
   .left-section h3 {
-    font-size: 24px; /* Further reduce heading size */
+    font-size: 24px;
+    /* Further reduce heading size */
   }
 
   .controls button {
@@ -1499,11 +1542,13 @@ nav ul li a.active::after {
   }
 
   .testimonial-card p {
-    font-size: 12px; /* Further reduce text size */
+    font-size: 12px;
+    /* Further reduce text size */
   }
 
   .testimonial-card span {
-    font-size: 10px; /* Further reduce span size */
+    font-size: 10px;
+    /* Further reduce span size */
   }
 }
 
@@ -1511,9 +1556,10 @@ nav ul li a.active::after {
 @media (max-width: 480px) {
 
   .success-stories h2 {
-    font-size: 16px; /* Further reduce heading font size */
+    font-size: 16px;
+    /* Further reduce heading font size */
     padding: 8px 16px;
-    border-radius:10px;
+    border-radius: 10px;
   }
 
   .container {
@@ -1532,21 +1578,25 @@ nav ul li a.active::after {
   }
 
   .testimonials {
-    gap: 10px; /* Further reduce gap */
+    gap: 10px;
+    /* Further reduce gap */
     width: 350px;
   }
 
   .testimonial-card {
-    max-width: 70%; /* Ensure full-width cards */
+    max-width: 70%;
+    /* Ensure full-width cards */
     padding: 10px;
   }
 
   .testimonial-card p {
-    font-size: 12px; /* Adjust font size for readability */
+    font-size: 12px;
+    /* Adjust font size for readability */
   }
 
   .testimonial-card span {
-    font-size: 10px; /* Adjust span font size */
+    font-size: 10px;
+    /* Adjust span font size */
   }
 }
 
@@ -1629,7 +1679,8 @@ label {
   text-align: left;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 16px;
   border-radius: 10px;
   font-size: 16px;
@@ -1674,41 +1725,51 @@ textarea {
   }
 
   .left1-section h1 {
-    font-size: 36px; /* Adjust heading font size */
+    font-size: 36px;
+    /* Adjust heading font size */
     text-align: center;
     margin-bottom: 40px;
   }
 
   .illustration1 img {
-    max-width: 85%; /* Resize image for better display */
+    max-width: 85%;
+    /* Resize image for better display */
   }
 
   .right-section {
-    padding: 40px 30px; /* Adjust padding for a cleaner layout */
+    padding: 40px 30px;
+    /* Adjust padding for a cleaner layout */
   }
 
   .contact-form {
-    gap: 25px; /* Maintain adequate spacing between form fields */
+    gap: 25px;
+    /* Maintain adequate spacing between form fields */
   }
 
   .form-row {
     flex-direction: column;
-    gap: 20px; /* Increase gap between rows */
+    gap: 20px;
+    /* Increase gap between rows */
   }
 
   .form-group {
     flex: 1;
   }
 
-  input, textarea {
-    font-size: 16px; /* Slightly reduce font size */
-    padding: 14px; /* Adjust padding for better usability */
+  input,
+  textarea {
+    font-size: 16px;
+    /* Slightly reduce font size */
+    padding: 14px;
+    /* Adjust padding for better usability */
   }
 
   .submit-button {
-    width: 100%; /* Make the submit button full width */
+    width: 100%;
+    /* Make the submit button full width */
     margin-top: 40px;
-    padding: 14px 24px; /* Adjust button padding */
+    padding: 14px 24px;
+    /* Adjust button padding */
   }
 }
 
@@ -1751,7 +1812,8 @@ textarea {
     flex: 1;
   }
 
-  input, textarea {
+  input,
+  textarea {
     font-size: 14px;
   }
 
@@ -1783,7 +1845,8 @@ textarea {
     gap: 15px;
   }
 
-  input, textarea {
+  input,
+  textarea {
     padding: 12px;
     font-size: 14px;
   }
@@ -1995,7 +2058,8 @@ textarea {
   .footer__container {
     flex-direction: column;
     align-items: center;
-    gap: 30px; /* Add spacing between sections */
+    gap: 30px;
+    /* Add spacing between sections */
   }
 
   .footer__logo-section {
@@ -2003,39 +2067,48 @@ textarea {
   }
 
   .footer__logo {
-    width: 45%; /* Resize logo */
+    width: 45%;
+    /* Resize logo */
   }
 
   .footer__heading {
-    font-size: 16px; /* Adjust heading font size */
+    font-size: 16px;
+    /* Adjust heading font size */
   }
 
   .footer__title {
-    font-size: 14px; /* Adjust title font size */
+    font-size: 14px;
+    /* Adjust title font size */
   }
 
   .footer__address,
   .footer__contact,
   .footer__email {
-    font-size: 13px; /* Adjust font size for better readability */
-    text-align: center; /* Center-align text */
+    font-size: 13px;
+    /* Adjust font size for better readability */
+    text-align: center;
+    /* Center-align text */
   }
 
   .footer__social-icons {
-    gap: 15px; /* Adjust spacing between social icons */
+    gap: 15px;
+    /* Adjust spacing between social icons */
   }
 
   .footer__social-icon {
-    font-size: 20px; /* Adjust icon size */
+    font-size: 20px;
+    /* Adjust icon size */
   }
 
   .reach-us h2 {
-    font-size: 30px; /* Adjust heading font size */
+    font-size: 30px;
+    /* Adjust heading font size */
   }
 
   .address_details {
     flex-direction: column;
-    gap: 40px; /* Increase gap between address details */
+    gap: 40px;
+    /* Increase gap between address details */
     text-align: center;
   }
 }
