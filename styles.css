@@ -706,13 +706,13 @@ nav ul li a.active::after {
 /* Our Offerings Section */
 .offerings-section {
   text-align: center;
-  padding: 40px 20px;
+  /* padding: 40px 20px; */
 }
 
 .offerings-content {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  /* margin-top: 40px; */
   flex-wrap: wrap;
   /* Allow items to wrap */
 }
@@ -729,9 +729,9 @@ nav ul li a.active::after {
 }
 
 .offerings-section img {
-  width: 60%;
+  width: 70%;
   border-radius: 15px;
-  margin: 10px 20px;
+  margin: 0px 20px;
   display: flex;
   justify-content: center;
 }
