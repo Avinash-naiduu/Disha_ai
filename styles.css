@@ -1909,7 +1909,7 @@ textarea {
 }
 
 .footer__contact-section {
-  /* flex: 1; */
+  flex: 1;
   padding-right: 20px;
 }
 
@@ -2086,69 +2086,6 @@ textarea {
   }
 
 }
-
-/* Responsive Design for 912px */
-@media screen and (max-width: 912px) {
-  .footer__container {
-    /* flex-direction: column; */
-    align-items: center;
-    gap: 30px;
-    /* Add spacing between sections */
-  }
-
-  .footer__logo-section {
-    margin-bottom: 25px;
-  }
-
-  .footer__logo {
-    width: 25%;
-    /* Resize logo */
-  }
-
-  .footer__heading {
-    font-size: 16px;
-    /* Adjust heading font size */
-    /* text-align: left; */
-  }
-
-  .footer__title {
-    font-size: 14px;
-    /* Adjust title font size */
-    text-align: center;
-  }
-
-  .footer__address,
-  .footer__contact,
-  .footer__email {
-    font-size: 13px;
-    /* Adjust font size for better readability */
-    text-align: center;
-    /* Center-align text */
-  }
-
-  .footer__social-icons {
-    gap: 15px;
-    /* Adjust spacing between social icons */
-  }
-
-  .footer__social-icon {
-    font-size: 20px;
-    /* Adjust icon size */
-  }
-
-  .reach-us h2 {
-    font-size: 30px;
-    /* Adjust heading font size */
-  }
-
-  .address_details {
-    /* flex-direction: column; */
-    
-    /* Increase gap between address details */
-    text-align: center;
-  }
-}
-
 
 /* For screens 768px and below */
 @media screen and (max-width: 768px) {
