@@ -726,3 +726,38 @@ nav ul li a.active::after {
     gap: 10px;
   }
 }
+
+/* Container for the button */
+.sticky-button-container {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  background-color: #40C351;
+  padding: 12px 15px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 50px;
+}
+
+/* Icon styling */
+.sticky-button-container img {
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+/* Relative positioning for the container */
+.sticky-button-wrapper {
+  position: relative;
+}
