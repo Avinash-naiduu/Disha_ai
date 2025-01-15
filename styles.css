@@ -158,10 +158,67 @@ nav ul li a.active::after {
 
   .hamburger {
     display: flex;
-    width: auto;
   }
 }
 
+/* Responsive Design */
+@media screen and (max-width: 912px) {
+
+  header {
+      padding: 15px 20px;
+  }
+
+  nav ul {
+      flex-direction: row;
+      gap: 15px;
+  }
+
+  .login-btn {
+      padding: 10px 24px;
+      font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+      /* flex-direction: column; */
+      align-items: flex-start;
+      padding: 10px 30px;
+  }
+
+  nav ul {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  nav ul li {
+      margin: 5px 0;
+  }
+
+  .login-btn {
+      padding: 8px 20px;
+      font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+      padding: 10px;
+  }
+
+  .logo img {
+      height: 30px;
+  }
+
+  nav ul li a {
+      font-size: 16px;
+  }
+
+  .login-btn {
+      padding: 6px 16px;
+      font-size: 14px;
+  }
+}
 
 /* Custom Styling for the Carousel */
 .hero-section {
@@ -232,20 +289,6 @@ nav ul li a.active::after {
     margin-top: 30px;
     border-radius: 30px;
   }
-
-  header {
-    padding: 15px 20px;
-  }
-
-  nav ul {
-    flex-direction: row;
-    gap: 15px;
-  }
-
-  .login-btn {
-    padding: 10px 24px;
-    font-size: 18px;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -253,15 +296,6 @@ nav ul li a.active::after {
     /* flex-direction: column; */
     align-items: flex-start;
     padding: 10px 30px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  nav ul li {
-    margin: 5px 0;
   }
 
   .hero-section .banner-slider {
@@ -273,11 +307,6 @@ nav ul li a.active::after {
   .hero-section img {
     max-height: 380px;
   }
-
-  .login-btn {
-    padding: 8px 20px;
-    font-size: 16px;
-  }
 }
 
 @media screen and (max-width: 480px) {
@@ -287,10 +316,6 @@ nav ul li a.active::after {
 
   .logo img {
     height: 30px;
-  }
-
-  nav ul li a {
-    font-size: 16px;
   }
 
   .login-btn {
@@ -1982,7 +2007,7 @@ textarea {
 .reach-us {
   text-align: center;
   padding: 20px;
-  margin: 80px 80px 0px 80px;
+  /* margin: 80px 80px 0px 80px; */
 }
 
 .reach-us h2 {
