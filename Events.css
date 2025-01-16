@@ -72,8 +72,10 @@ nav ul li a.active::after {
 }
 
 /* Login Button Styling */
+
 .login-btn {
   background-color: #FF7676;
+  border: 2px solid #ff7676;
   color: white;
   padding: 12px 38px;
   border-radius: 8px;
@@ -84,7 +86,11 @@ nav ul li a.active::after {
 }
 
 .login-btn:hover {
-  background-color: #FF5A5A;
+  background-color: White;
+  color:#FF7676;
+  font-weight: bold;
+  border: 2px solid #ff7676;
+  padding: 12px 38px;
 }
 
 /* Hamburger Menu Styling */
